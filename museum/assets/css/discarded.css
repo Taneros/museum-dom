@@ -1,0 +1,78 @@
+/* Ticket Type */
+
+.tickets__buy-type label {
+	display: block;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+label > input[type="radio"] {
+  display: none;
+}
+
+label > input[type="radio"] + *::before {
+  content: "";
+	position: absolute;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFF;
+}
+
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(#FFF 0%, #FFF 40%, transparent 50%, transparent);
+  /* border-color: #FFF; */
+}
+
+label > input[type="radio"]:checked + * {
+  position: relative;
+}
+
+label > input[type="radio"] + * {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+
+.tickets__buy-type li {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.tickets__buy-type form {
+	display: flex;
+	flex-direction: column;
+}
+
+.tickets__buy-type input[type="radio"] {
+  display: none;
+}
+
+.tickets__buy-type label::before {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: -40px;
+	content: "";
+	width: 17px;
+	height: 17px;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	margin-right: 23px;
+}
+
+.tickets__buy-type input:checked + label::after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	top: 6px;
+	left: -34px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+}
