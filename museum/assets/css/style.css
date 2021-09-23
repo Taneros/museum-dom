@@ -82,14 +82,14 @@ a:active {
   font-family: Forum;
   font-weight: 400;
   font-size: 28px;
-  line-height: 50px;
+  line-height: 31;
   letter-spacing: 5px;
   text-transform: uppercase;
   /* margin-left: 21px; */
 }
 
 .header__nav {
-  width: 720px;
+  width: 775px;
   height: 26px;
 }
 
@@ -99,14 +99,14 @@ a:active {
   align-items: center;
 }
 
-.header__item:last-child {
+.header__list-item:last-child {
   margin-right: 0;
 }
 
 .header__link {
   font-weight: 200;
   font-size: 22px;
-  line-height: 50px;
+  line-height: 26px;
   letter-spacing: 2px;
   color: #ffffff;
   text-decoration: none;
@@ -142,10 +142,10 @@ a:active {
       rgba(0, 0, 0, 0.863) 33%,
       rgba(0, 0, 0, 0.404) 96%
     ),
-    url('../img/header-background.jpeg');
-  background-size: 1215px 750px;
+    url('../img/mona-lisa-welcome.jpg');
+  background-size: 1000px 750px;
   background-repeat: no-repeat;
-  background-position: calc(50% + 350px) 100%;
+  background-position: calc(50% + 200px) 100%;
 }
 
 .welcome__discover {
