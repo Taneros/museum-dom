@@ -183,40 +183,6 @@
       </section>
       <section id="video" class="video">
         <div class="container video-container">
-          <div class="video__player">
-            <div class="video__player-window">
-              <button class="video__player-window-btn button"></button>
-            </div>
-            <div class="video__player-control">
-              <div class="video__player-control-wrapper">
-                <button class="controls-skip_l button"></button>
-                <button class="controls-play button"></button>
-                <button class="controls-skip_r button"></button>
-                <div class="controls-progress_bar-vid">
-                  <input
-                    type="range"
-                    value="40"
-                    min="0"
-                    max="100"
-                    step="1"
-                    class="progress"
-                  />
-                </div>
-                <button class="controls-volume button"></button>
-                <div class="controls-progress_bar-vol">
-                  <input
-                    type="range"
-                    value="40"
-                    min="0"
-                    max="100"
-                    step="1"
-                    class="progress"
-                  />
-                </div>
-                <button class="controls-full_scr button"></button>
-              </div>
-            </div>
-          </div>
           <div class="video__text">
             <h2 class="video__header">video journey</h2>
             <div class="video__description">
@@ -224,6 +190,46 @@
                 Enter and visit one of the most famous museums in the world and
                 enjoy masterpieces such as Mona Lisa or Hammurabi's Code
               </p>
+            </div>
+          </div>
+          <div class="video__player">
+            <div class="player-window">
+              <button class="player-window-btn button"></button>
+            </div>
+            <div class="player-control">
+              <div class="player-control-wrapper">
+                <button class="player-control-play button"></button>
+                <div class="player-control-progress_bar-vid">
+                  <input
+                    type="range"
+                    value="40"
+                    min="0"
+                    max="100"
+                    step="1"
+                    class="progress"
+                  />
+                </div>
+                <button class="player-control-volume button"></button>
+                <div class="player-control-progress_bar-vol">
+                  <input
+                    type="range"
+                    value="40"
+                    min="0"
+                    max="100"
+                    step="1"
+                    class="progress"
+                  />
+                </div>
+                <button class="player-control-full_scr button"></button>
+              </div>
+            </div>
+            <div class="player-playlist">
+              <div class="player-playlist__video-row">
+                <div class="player-playlist__video-slide slide-1"></div>
+                <div class="player-playlist__video-slide slide-2"></div>
+                <div class="player-playlist__video-slide slide-3"></div>
+              </div>
+              <div class="player-playlist__paginator"></div>
             </div>
           </div>
         </div>
