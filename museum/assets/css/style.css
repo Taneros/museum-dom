@@ -19,7 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 75px 20px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   max-width: 1440px;
   /* width: 100%; */
 }
@@ -50,9 +51,14 @@ a:active {
   background-color: #030303;
 }
 .header-container {
+  min-height: 150px;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+}
+
+div.header-container.container {
+  padding: 0;
 }
 
 .header__logo,
@@ -135,27 +141,27 @@ a:active {
 
 .welcome {
   width: 100%;
-  min-height: 750px;
   background-color: #030303;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.863) 33%,
-      rgba(0, 0, 0, 0.404) 96%
-    ),
-    url('../img/mona-lisa-welcome.jpg');
+  background-image: url('../img/mona-lisa-welcome.jpg');
   background-size: 1000px 750px;
   background-repeat: no-repeat;
-  background-position: calc(50% + 200px) 100%;
+  background-position: calc(50% + 220px) 0%;
+}
+
+.welcome-container {
+  min-height: 810px;
+  position: relative;
+}
+
+div.welcome-container.container {
+  padding-top: 0;
 }
 
 .welcome__discover {
   width: 598px;
-  height: 390px;
-  position: relative;
-}
-
-.welcome-container {
-  padding-top: 114px;
+  height: 388px;
+  top: 150px;
+  position: absolute;
 }
 
 .welcome__discover-header {
@@ -167,6 +173,7 @@ a:active {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 0;
 }
 
 .welcome__discover-text {
@@ -218,6 +225,18 @@ a:active {
 
 .welcome__discover-btn:hover {
   /* background-color: #9d8665; */
+}
+
+.welcome__slider {
+}
+.welcome__slider-pagination {
+  position: absolute;
+  width: 600px;
+  height: 120px;
+  right: 0;
+  bottom: 0;
+  background-color: #666666;
+  background-image: url('../img/slider-pagination-welcome.jpg');
 }
 
 /* Main font for header + in small sections change only font-size line-height */
@@ -430,7 +449,7 @@ a:active {
 .explore__picture {
   width: 720px;
   height: 700px;
-  background-image: url('../img/picture-explore.jpg');
+  background-image: url('../img/picture-explore-restore.jpg');
   background-size: cover;
   margin-top: 10px;
 }
@@ -443,7 +462,7 @@ a:active {
 
 .video {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: column;
   min-height: 1010px;
 }
 
