@@ -670,11 +670,28 @@ div.welcome-container.container {
   background-image: url('../img/video-slider-pagination.jpg');
 }
 
+/*** --> Gallery  ***/
+
+.gallery {
+  color: #ffffff;
+  /* background-color: #030303; */
+  background-color: #030303;
+  min-height: 2200px;
+}
+
+.gallery-container.container {
+}
+
+.gallery__cards {
+  background-image: url('../img/gallery-png.png');
+  min-height: 1960px;
+}
+
 /*** -->> Tickets Section ***/
 
 .tickets {
   color: #ffffff;
-  background-color: #030303;
+  background-color: #ffffff;
   min-height: 743px;
   padding: 0px 0;
 }
@@ -691,7 +708,7 @@ div.welcome-container.container {
   /* identical to box height, or 112% */
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #9d8665;
   margin-bottom: 25px;
 }
 
