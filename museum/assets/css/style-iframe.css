@@ -1,0 +1,6 @@
+@import url('../css/nullstyle.css');
+
+iframe {
+  width: 100%;
+  height: 100%;
+}

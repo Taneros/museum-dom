@@ -51,6 +51,10 @@ a:active {
   transition: 0.7s;
 }
 
+a {
+  color: #000;
+}
+
 .section-header {
   font-family: Forum;
   font-style: normal;
@@ -335,6 +339,7 @@ div.welcome-container.container {
 
 .card {
   cursor: pointer;
+  color: #000;
 }
 
 .card .br-card.hover {
@@ -375,7 +380,6 @@ div.welcome-container.container {
   font-size: 22px;
   line-height: 26px;
   text-transform: capitalize;
-  color: black;
 }
 
 .card-bg2 {
