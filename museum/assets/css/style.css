@@ -52,6 +52,19 @@ a:active {
   transition: 0.7s;
 }
 
+.section-header {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 75px;
+}
+
 /** -->> Header **/
 
 .header {
@@ -96,7 +109,7 @@ div.header-container.container {
   font-family: Forum;
   font-weight: 400;
   font-size: 28px;
-  line-height: 31;
+  line-height: 31px;
   letter-spacing: 5px;
   text-transform: uppercase;
   /* margin-left: 21px; */
@@ -149,7 +162,7 @@ div.header-container.container {
 
 .welcome {
   width: 100%;
-  background-color: #030303;
+  background-color: #000;
   background-image: url('../img/mona-lisa-welcome.jpg');
   background-size: 1000px 750px;
   background-repeat: no-repeat;
@@ -251,15 +264,7 @@ div.welcome-container.container {
 
 /** -->> Visiting Section  */
 
-.visiting__header-h2 {
-  font-family: Forum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
-  /* identical to box height, or 112% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
+.visiting__header {
   color: #9d8665;
   margin-bottom: 25px;
 }
@@ -345,7 +350,7 @@ div.welcome-container.container {
 
 /* <<-- End of underline animation */
 
-.card__header-h2 {
+.card__header {
   font-family: Forum;
   font-style: normal;
   font-weight: 400;
@@ -405,11 +410,11 @@ div.welcome-container.container {
 .explore {
   color: #ffffff;
   background-color: #030303;
-  min-height: 865px;
 }
 
 .explore-container {
-  height: 715px;
+  min-height: 865px;
+  /* height: 715px; */
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -423,14 +428,6 @@ div.welcome-container.container {
 }
 
 .explore__header {
-  font-family: Forum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
-  /* identical to box height, or 112% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 25px;
 }
@@ -469,8 +466,9 @@ div.welcome-container.container {
 /*** -->> Video Section ***/
 
 .video {
-  display: flex;
-  flex-direction: column;
+  background-color: #fff;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* min-height: 1010px; */
 }
 
@@ -488,15 +486,8 @@ div.welcome-container.container {
 }
 
 .video__header {
-  font-family: Forum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
-  /* identical to box height, or 112% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
   color: #9d8665;
+  margin-bottom: 0;
 }
 
 .video__description {
@@ -589,13 +580,7 @@ div.welcome-container.container {
 /* -->> Video progress bars */
 
 .progress {
-  background: linear-gradient(
-    to right,
-    #710707 0%,
-    #710707 40%,
-    #fff 40%,
-    #fff 100%
-  );
+  background: linear-gradient(to right, #710707 0%, #710707 40%, #fff 40%, #fff 100%);
   width: 100%;
   height: 8px;
   outline: none;
@@ -674,12 +659,25 @@ div.welcome-container.container {
 
 .gallery {
   color: #ffffff;
-  /* background-color: #030303; */
   background-color: #030303;
-  min-height: 2200px;
 }
 
 .gallery-container.container {
+  min-height: 2200px;
+  padding-bottom: 0;
+}
+
+.gallery__header {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 75px;
 }
 
 .gallery__cards {
@@ -690,7 +688,7 @@ div.welcome-container.container {
 /*** -->> Tickets Section ***/
 
 .tickets {
-  color: #ffffff;
+  color: var(--bg-dark);
   background-color: #ffffff;
   min-height: 743px;
   padding: 0px 0;
@@ -700,14 +698,6 @@ div.welcome-container.container {
 }
 
 .tickets__header {
-  font-family: Forum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
-  /* identical to box height, or 112% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
   color: #9d8665;
   margin-bottom: 25px;
 }
@@ -772,7 +762,7 @@ h3 {
 
 .tickets__buy-type li {
   display: inline-block;
-  margin-bottom: 49px;
+  margin-bottom: 25px;
 }
 
 .tickets__buy-type label {
@@ -782,7 +772,7 @@ h3 {
   font-size: 22px;
   line-height: 26px;
   /* identical to box height */
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .tickets__buy-type label {
@@ -794,7 +784,7 @@ h3 {
 .radio {
   display: grid;
   grid-template-columns: min-content auto;
-  grid-gap: 20px;
+  grid-gap: 23px;
 }
 
 .radio__input input {
@@ -808,7 +798,7 @@ h3 {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  border: 0.1em solid #fff;
+  border: 0.1em solid #000;
 }
 
 .radio__control:hover {
@@ -847,7 +837,7 @@ input + .radio__control::before {
   content: '';
   width: 7px;
   height: 7px;
-  box-shadow: inset 7px 7px #fff;
+  box-shadow: inset 7px 7px #000;
   border-radius: 50%;
   transition: 180ms transform ease-in-out;
   transform: scale(0);
@@ -865,18 +855,22 @@ input:checked + .radio__control::before {
 .tickets__buy-amount form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: start;
 }
 
 .tickets__buy-amount h3 {
-  margin-bottom: 11px;
+  margin-bottom: 25px;
   text-align: right;
 }
 
 .tickets__buy-amount .age {
-  max-width: 155px;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.tickets__buy-amount .age:nth-last-child(3) {
+  margin-bottom: 0;
 }
 
 .tickets__buy-amount p {
@@ -887,20 +881,24 @@ input:checked + .radio__control::before {
   line-height: 26px;
 }
 .buy-btn {
-  /* width: 150px; */
+  width: 150px;
   /* height: 50px; */
-  margin-top: 14px;
-  margin-bottom: 16px;
+  margin-top: 15px;
+  /* margin-bottom: 10px; */
   margin-right: 0px;
   margin-left: auto;
-  border: 1px #fff solid;
+  border: 1px #000 solid;
+}
+
+.buy-btn:nth-last-child(2) {
+  margin-bottom: 0;
 }
 
 .buy-btn button {
   width: 48px;
   height: 48px;
   font-size: 22px;
-  color: #ffffff;
+  color: #000;
   background-color: transparent;
 }
 
@@ -938,15 +936,16 @@ input[type='number']::-webkit-inner-spin-button {
 .tickets__buy-amount li {
   list-style: none;
 }
+.tickets__buy-amount li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .tickets__buy-amount h3:nth-last-of-type(1) {
-  margin-top: 35px;
-  margin-bottom: 50px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 33px;
-  /* identical to box height */
+  margin-top: 50px;
+  margin-bottom: 60px;
   letter-spacing: 1.65px;
 }
 
@@ -958,10 +957,11 @@ input[type='number']::-webkit-inner-spin-button {
 .tickets__buy-btn {
   width: 175px;
   height: 50px;
-  background-color: #fff;
+  background-color: #000;
   left: 0;
   bottom: 0;
   border-radius: 2px;
+  color: #fff;
 }
 
 .tickets__buy-btn {
@@ -982,29 +982,30 @@ input[type='number']::-webkit-inner-spin-button {
   /* background-color: #9d8665; */
 }
 
-/*** -->> Contacts Section ***/
-
-.section-header {
-  font-family: Forum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
-  /* identical to box height, or 112% */
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+/*** ->> Parallax Section  */
+.parallax {
+  background-color: steelblue;
 }
 
+.parallax-container {
+  min-height: 400px;
+  min-width: 100%;
+  background-image: url('../img/parallax.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*** -->> Contacts Section ***/
+
 .contacts__header {
-  /* margin-top: 5px; */
+  margin-bottom: 25px;
   color: #9d8665;
 }
 
 .contacts-container {
   min-height: 500px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  /* padding-top: 75px; */
+  /* padding-bottom: 75px; */
 }
 
 .contacts-br {
@@ -1019,11 +1020,10 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .contacts__text {
-  margin-top: 10px;
 }
 
 .contacts__text h3 {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   font-weight: 500;
 }
 
@@ -1053,11 +1053,11 @@ input[type='number']::-webkit-inner-spin-button {
 footer {
   color: #ffffff;
   background-color: #030303;
-  min-height: 300px;
 }
 
 .footer-container {
-  min-height: 150px;
+  min-height: 300px;
+  /* min-height: 150px; */
   display: grid;
   grid-template-columns: 340px 366px 1fr;
 }
