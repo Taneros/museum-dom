@@ -30,7 +30,6 @@ body {
   padding-top: 75px;
   padding-bottom: 75px;
   max-width: 1440px;
-  /* width: 100%; */
 }
 
 /* All transitions timings for logos llinks & buttons */
@@ -89,15 +88,16 @@ div.header-container.container {
 
 .header__logo {
   display: flex;
+  flex-direction: row;
   width: 199px;
   height: 33px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header__logo a {
-  display: inline-block;
-  padding-bottom: 12px;
+  display: block;
+  /* padding-bottom: 12px; */
 }
 
 .header__logo:hover {
@@ -109,7 +109,7 @@ div.header-container.container {
   font-family: Forum;
   font-weight: 400;
   font-size: 28px;
-  line-height: 31px;
+  line-height: 35px;
   letter-spacing: 5px;
   text-transform: uppercase;
   /* margin-left: 21px; */
@@ -988,7 +988,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .parallax-container {
-  min-height: 400px;
+  height: 400px;
   min-width: 100%;
   background-image: url('../img/parallax.jpg');
   background-size: cover;
@@ -1032,8 +1032,8 @@ input[type='number']::-webkit-inner-spin-button {
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
-  line-height: 38px;
-  margin-bottom: 10px;
+  line-height: 26px;
+  margin-bottom: 24px;
   /* or 175% */
   color: #000;
 }
@@ -1056,20 +1056,31 @@ footer {
 }
 
 .footer-container {
-  min-height: 300px;
+  /* max-height: 392px; */
+  padding-bottom: 0px;
   /* min-height: 150px; */
+}
+
+.footer-container-upper {
   display: grid;
   grid-template-columns: 340px 366px 1fr;
+  /* margin-bottom: 50px; */
+  height: 140px;
+  margin-bottom: 50px;
 }
 
 .footer__logo {
   display: flex;
-  max-height: 60px;
+  flex-direction: row;
+  width: 195px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__logo a {
-  display: inline-block;
-  margin-top: 10px;
+  display: block;
+  /* padding-bottom: 12px; */
 }
 
 .footer__logo:hover {
@@ -1077,16 +1088,18 @@ footer {
   filter: invert(0.5) sepia(1);
 }
 
-.footer__nav-logo-text {
+.footer__logo-text {
   font-family: Forum;
   font-weight: 400;
   font-size: 28px;
-  line-height: 50px;
-  letter-spacing: 5px;
+  line-height: 31px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  margin-left: 21px;
+  /* margin-left: 21px; */
 }
 .footer__nav {
+  max-width: 363px;
+  max-height: 128px;
 }
 
 .footer__list {
@@ -1140,11 +1153,11 @@ footer {
   display: grid;
   align-items: flex-end;
   justify-content: right;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .footer__social .icons {
-  width: 336px;
+  width: 340px;
   height: 48px;
 }
 
@@ -1203,6 +1216,49 @@ footer {
   filter: invert(0.5) sepia(1);
   /* background-color: #fff; */
   /* transition: filter 0.7s; */
+}
+
+.footer-br {
+  min-width: 100%;
+  background-color: #666666;
+}
+
+.school-container {
+  padding: 0;
+}
+
+.student-info {
+  height: 124px;
+  /* max-width: 1440px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-info__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.student-info__details p {
+  display: inline-block;
+  color: #666;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 22px;
+  /* identical to box height, or 100% */
+  letter-spacing: 2px;
+}
+
+.student-info__details a {
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* TODO */
