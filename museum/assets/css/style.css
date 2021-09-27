@@ -702,7 +702,7 @@ div.welcome-container.container {
 }
 
 .gallery__inner-container {
-  height: 2900px;
+  height: 3000px;
   display: flex;
   flex-flow: column wrap;
   column-gap: 36px;
