@@ -48,7 +48,7 @@ a:hover,
 a:focus,
 a:active {
   color: #9d8665;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
 a {
@@ -1360,8 +1360,6 @@ footer {
   justify-content: space-between;
 }
 .student-info__details p {
-  display: inline-block;
-  color: #666;
   font-family: Roboto;
   font-style: normal;
   font-weight: 200;
@@ -1371,13 +1369,24 @@ footer {
   letter-spacing: 2px;
 }
 
-.student-info__details a {
+.student-info__details > * {
   font-weight: 200;
   font-size: 22px;
   letter-spacing: 2px;
   color: #ffffff;
   text-decoration: none;
 }
+
+/* .student-info__details a {
+  color: #ffffff;
+} */
+
+/* .student-info__details a:hover,
+.student-info__details a:focus,
+.student-info__details a:active {
+  color: #9d8665;
+  transition: 0.7s;
+} */
 
 /* TODO */
 
