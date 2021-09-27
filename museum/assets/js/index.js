@@ -61,7 +61,7 @@ picArr.map((picArr, index) => {
 const button = document.querySelectorAll('[id=ripple]')
 
 button.forEach((el) =>
-  el.addEventListener('mouseover', function (e) {
+  el.addEventListener('click', function (e) {
     const x = e.clientX
     const y = e.clientY
     const rect = e.target.getBoundingClientRect()
@@ -74,6 +74,9 @@ button.forEach((el) =>
     circle.style.top = yInside + 'px'
     circle.style.left = xInside + 'px'
     this.appendChild(circle)
-    setTimeout(() => {}, 500)
+    setTimeout(() => {
+      const circles = this.querySelectorAll('.circle')
+      circles.forEach((el) => el.parentNode.removeChild(el))
+    }, 350)
   })
 )
