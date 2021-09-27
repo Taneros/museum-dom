@@ -1,4 +1,3 @@
-// import './galery.js'
 const progress = document.querySelectorAll('.progress')
 
 progress.forEach((el) =>
@@ -23,7 +22,7 @@ card.forEach((el, i) => {
   })
 })
 
-// gallery functionality
+//** gallery functionality **//
 const galleryInnerContainer = document.querySelector('.gallery__inner-container')
 
 const picArr = [
@@ -57,3 +56,27 @@ picArr.map((picArr, index) => {
   img.alt = ``
   galleryInnerContainer.append(img)
 })
+
+//** ripple effect **//
+const button = document.querySelectorAll('[id=ripple]')
+
+button.forEach((el) =>
+  el.addEventListener('click', function (e) {
+    const x = e.clientX
+    const y = e.clientY
+    const rect = e.target.getBoundingClientRect()
+    const btnTop = rect.top
+    const btnLeft = rect.left
+    const xInside = x - btnLeft
+    const yInside = y - btnTop
+    const circle = document.createElement('span')
+    circle.classList.add('circle')
+    circle.style.top = yInside + 'px'
+    circle.style.left = xInside + 'px'
+    this.appendChild(circle)
+    setTimeout(() => {
+      const circles = this.querySelectorAll('.circle')
+      circles.forEach((el) => el.parentNode.removeChild(el))
+    }, 350)
+  })
+)
