@@ -94,7 +94,7 @@ input[type='time']::-webkit-calendar-picker-indicator {
   width: 190px;
 }
 
-#ticket__time {
+#time__time {
   background-position: 15px;
   background-repeat: no-repeat;
   background-image: url('assets/svg/ticket-time.svg');

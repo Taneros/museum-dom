@@ -1100,8 +1100,9 @@ input[type='number']::-webkit-inner-spin-button {
 /*** ->> tickets__booking section buy  ***/
 .tickets__booking {
   height: 100%;
-  /* width: 0; */
-  width: 100%;
+  width: 0;
+  /* comment 0 width for editing and uncomment width 100% */
+  /* width: 100%; */
   position: fixed;
   z-index: 10;
   top: 0;
@@ -1174,7 +1175,6 @@ input[type='number']::-webkit-inner-spin-button {
 .tickets__booking-form {
   width: 970px;
   height: 663px;
-  /* background-image: url('../img/booking-tickets.jpg'); */
 }
 /* +++++++++++++++++++++++++++++++++ */
 /* booking form */
@@ -1184,17 +1184,202 @@ form {
   font-weight: 400;
 }
 
-.form__container {
-  margin: 0 auto;
+.booking-form-container {
   max-width: 970px;
   display: flex;
   justify-content: space-between;
 }
 
 .booking-form-left {
+  width: 400px;
+  height: 663px;
+  background-color: forestgreen;
 }
 
 .booking-form-right {
+  width: 530px;
+  height: 663px;
+  background-color: greenyellow;
+}
+
+.booking-form-logo {
+  background-image: url('../svg/booking-logo.svg');
+  width: 85px;
+  height: 41px;
+}
+
+.booking-form-header {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #9d8665;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.booking-form-subscr {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--dark-red);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.booking-form__date-time {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 400px;
+  margin-top: 60px;
+}
+
+.date-time-left__item {
+}
+
+.booking-form__date-time > * + * {
+}
+
+.date-time-left__item {
+  height: 45px;
+  width: 190px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 0 10px 0 45px;
+  border: 1px solid black;
+}
+
+.date-time-left__item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-time-left__item.long {
+  width: 100%;
+}
+
+.date-time-left__item::-webkit-input-placeholder {
+  color: #000000;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  background-image: url('../svg/booking-time-date-arrow.svg');
+  background-position: 6px;
+  background-size: 80%;
+}
+
+input[type='date']:before {
+  content: 'Date';
+}
+input[type='time']:before {
+  content: 'Time';
+}
+
+input[type='time']::-webkit-calendar-picker-indicator {
+  background-image: url('../svg/booking-time-date-arrow.svg');
+  background-position: 6px;
+  background-size: 80%;
+}
+
+::-webkit-datetime-edit {
+  opacity: 0;
+}
+
+#ticket__date {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-date.svg');
+}
+
+#ticket__time {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-time.svg');
+}
+#ticket__name {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-name.svg');
+}
+
+#ticket__email {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-email.svg');
+}
+
+#ticket__tel {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-tel.svg');
+}
+
+select {
+  display: grid;
+  grid-template-areas: 'select';
+}
+
+#ticket__type {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-type.svg');
+  appearance: none;
+}
+
+.select-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.custom-seect-arrow {
+  top: 0;
+  right: 14px;
+  position: absolute;
+  display: block;
+  /* background: red; */
+  background-image: url('../svg/booking-time-date-arrow.svg');
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 17px;
+  background-position: center;
+  pointer-events: none;
+}
+
+/* =========================== */
+.booking-form__entry {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding: 10px 15px 15px 15px;
+  border: 1px solid black;
+}
+h3.booking-form-header {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.booking__br {
+  margin-bottom: 15px;
+}
+
+.booking-form__entry-inputs {
+  width: 370px;
+  height: 65px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.booking-form__entry-inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

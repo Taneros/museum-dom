@@ -231,7 +231,7 @@
                 </form>
               </div>
               <div class="tickets__buy-amount">
-                <form action="#!">
+                <form action="">
                   <h3>Amount</h3>
                   <div class="age">
                     <p>Basic 18+</p>
@@ -258,29 +258,77 @@
                     </div>
                   </div>
                   <h3>Total €220</h3>
-                  <button class="tickets__buy-btn button transition" onclick="openNav()">Buy Now</button>
+                  <button id="ripple" class="tickets__buy-btn button transition" onclick="openNav()">Buy Now</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <!-- Booking Form START -->
+        <!-- Booking Form START -------------------------------------------------->
         <div id="book" class="tickets__booking">
           <button class="closebtn" onclick="closeNav()">×</button>
           <div class="tickets__booking-overlay">
             <div class="tickets__booking-container">
               <div class="tickets__booking-form">
                 <form action="">
-                  <div class="booking-form-left"></div>
-
-                  <div class="booking-form-right"></div>
+                  <div class="booking-form-container">
+                    <div class="booking-form-left">
+                      <div class="booking-form-logo"></div>
+                      <h2 class="booking-form-header">Booking tickets</h2>
+                      <p class="booking-form-subscr">Tour to Louvre</p>
+                      <div class="booking__br br"></div>
+                      <div class="booking-form__date-time">
+                        <input id="ticket__date" class="date-time-left__item" type="date" value="2021-09-27" name="dateAndTime" placeholder="Date" />
+                        <input id="ticket__time" class="date-time-left__item" type="time" value="23:50" name="dateAndTime" placeholder="Time" />
+                        <input id="ticket__name" class="date-time-left__item long" id="ticket__name" placeholder="Name" type="text" />
+                        <input id="ticket__email" class="date-time-left__item long" placeholder="E-mail" type="email" />
+                        <input id="ticket__tel" class="date-time-left__item long" placeholder="Phone" type="tel" />
+                        <div class="select-wrapper">
+                          <select id="ticket__type" class="date-time-left__item long">
+                            <option value="">Ticket Type</option>
+                            <option value="">Permanent exhibition</option>
+                            <option value="">Temporary exhibition</option>
+                            <option value="">Combined Admission</option>
+                          </select>
+                          <span class="custom-seect-arrow"></span>
+                        </div>
+                      </div>
+                      <div class="booking-form__entry">
+                        <h3 class="booking-form-header">Entry Ticket</h3>
+                        <div class="booking__br br"></div>
+                        <div class="booking-form__entry-inputs">
+                          <div class="entry-input-age">
+                            <p>Basic 18+</p>
+                            <p>Senior 65+</p>
+                          </div>
+                          <div class="entry-inputs-buy-btn">
+                            <ul>
+                              <li>
+                                <button type="button" onclick="this.nextElementSibling.stepDown()" class="transition">–&nbsp;</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="buy-btn-number" />
+                                <button type="button" onclick="this.previousElementSibling.stepUp()" class="transition">+</button>
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <button type="button" onclick="this.nextElementSibling.stepDown()" class="transition">–&nbsp;</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="buy-btn-number" />
+                                <button type="button" onclick="this.previousElementSibling.stepUp()" class="transition">+</button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking-form-right"></div>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Booking Form END -->
+      <!-- Booking Form END --------------------------------------------------------->
       <section class="parallax">
         <h2>Parallax</h2>
         <div class="container parallax-container"></div>
