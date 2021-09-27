@@ -1077,6 +1077,7 @@ input[type='number']::-webkit-inner-spin-button {
   bottom: 0;
   border-radius: 2px;
   color: #fff;
+  position: relative;
 }
 
 .tickets__buy-btn {
@@ -1095,6 +1096,29 @@ input[type='number']::-webkit-inner-spin-button {
 
 .tickets__buy-btn:hover {
   /* background-color: #9d8665; */
+}
+
+/*** -> ripple effect  */
+
+.tickets__buy-btn:focus {
+  outline: none;
+}
+
+.tickets__buy-btn .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
 }
 
 /*** ->> Parallax Section  */
