@@ -80,3 +80,12 @@ button.forEach((el) =>
     }, 350)
   })
 )
+// overlay
+
+function openNav() {
+  document.getElementById('book').style.width = '100%'
+}
+
+function closeNav() {
+  document.getElementById('book').style.width = '0%'
+}
