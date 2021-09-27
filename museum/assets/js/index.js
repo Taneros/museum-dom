@@ -57,3 +57,12 @@ picArr.map((picArr, index) => {
   img.alt = ``
   galleryInnerContainer.append(img)
 })
+// overlay
+
+function openNav() {
+  document.getElementById('book').style.width = '100%'
+}
+
+function closeNav() {
+  document.getElementById('book').style.width = '0%'
+}
