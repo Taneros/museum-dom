@@ -1100,9 +1100,10 @@ input[type='number']::-webkit-inner-spin-button {
 /*** ->> tickets__booking section buy  ***/
 .tickets__booking {
   height: 100%;
-  width: 0;
+  /* width: 0; */
+  width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
@@ -1173,8 +1174,30 @@ input[type='number']::-webkit-inner-spin-button {
 .tickets__booking-form {
   width: 970px;
   height: 663px;
-  background-image: url('../img/booking-tickets.jpg');
+  /* background-image: url('../img/booking-tickets.jpg'); */
 }
+/* +++++++++++++++++++++++++++++++++ */
+/* booking form */
+form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form__container {
+  margin: 0 auto;
+  max-width: 970px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-form-left {
+}
+
+.booking-form-right {
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /*** ->> Parallax Section  */
 .parallax {
@@ -1470,6 +1493,8 @@ footer {
 /* TODO */
 
 /* 
+
+combine all h2 h2 text transfomr uppercase
 
 class for each section to change colors
 
