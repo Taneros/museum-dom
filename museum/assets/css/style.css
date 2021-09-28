@@ -6,6 +6,7 @@
   --bg-dark: #151719;
   --dark-red: #710707;
   --font-gold: #9d8665;
+  --font-black: #030303;
   --font1: 80px;
   --font2: 32px;
 }
@@ -962,7 +963,7 @@ input:checked + .radio__control::before {
   transform: scale(1);
 }
 
-/* -->> Tickets Buy Radio Buttons */
+/* -->> Tickets Buy Amount Form*/
 
 .tickets__buy-amount {
 }
@@ -1067,7 +1068,7 @@ input[type='number']::-webkit-inner-spin-button {
 .tickets__buy-btn button {
 }
 
-/* -->> Buy Tickets Buy button checkout */
+/* -->> Buy Tickets Buy Now */
 
 .tickets__buy-btn {
   width: 175px;
@@ -1217,7 +1218,7 @@ form {
 .booking-form-left {
   width: 400px;
   height: 663px;
-  background-color: forestgreen;
+  /* background-color: forestgreen; */
 }
 
 .booking-form-right {
@@ -1374,7 +1375,7 @@ select {
   pointer-events: none;
 }
 
-/* =========================== */
+/* ============Entry Tickets form=============== */
 .booking-form__entry {
   /* display: flex;
   flex-direction: column;
@@ -1394,8 +1395,8 @@ h3.booking-form-header {
 }
 
 .booking-form__entry-inputs {
-  width: 370px;
-  height: 65px;
+  /* width: 370px; */
+  /* height: 65px; */
   margin: 0 auto;
   background-color: #fff;
 }
@@ -1404,6 +1405,86 @@ h3.booking-form-header {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+}
+
+/* ------------------ */
+
+.entry-inputs-buy-btn ul:nth-child(2) {
+  margin-top: 18px;
+}
+
+.entry-inputs-buy-btn ul {
+  width: 115px;
+  height: 25px;
+  /* height: 50px; */
+  /* margin-top: 15px; */
+  /* margin-bottom: 10px; */
+  /* margin-right: 0px; */
+  /* margin-left: auto; */
+  outline: 1px #000 solid;
+}
+
+.entry-inputs-buy-btn button {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  background-color: #000;
+}
+
+.entry-inputs-buy-btn button:hover {
+  color: #9d8665;
+}
+
+.entry-inputs-buy-btn input {
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.entry-inputs-buy-btn .buy-btn-number {
+  display: inline-block;
+  text-align: center;
+  all: unset;
+  text-align: center;
+  width: 35px;
+  font-size: 18px;
+  /* line-height: 21px; */
+}
+
+.entry-inputs-buy-btn ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  right: 0;
+}
+
+.entry-inputs-buy-btn li {
+  list-style: none;
+}
+.entry-inputs-buy-btn li {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.entry-input-age {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: c;
+}
+
+.entry-input-age p {
+  text-align: start;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--font-black);
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
