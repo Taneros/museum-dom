@@ -1407,8 +1407,6 @@ h3.booking-form-header {
   justify-content: space-between;
 }
 
-/* ------------------ */
-
 .entry-inputs-buy-btn ul:nth-child(2) {
   margin-top: 18px;
 }
@@ -1475,9 +1473,9 @@ input[type='number']::-webkit-inner-spin-button {
 
 .entry-input-age {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-around;
-  align-items: c;
+  align-items: center;
 }
 
 .entry-input-age p {
@@ -1485,6 +1483,97 @@ input[type='number']::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 21px;
   color: var(--font-black);
+}
+
+/* --------------Booking tickets right section---------- */
+
+.booking-form-right {
+  padding: 25px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.booking-form-right__overview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 470px;
+  height: 151px;
+  background-color: rosybrown;
+  position: relative;
+}
+
+.booking-form-right__overview h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+}
+.booking-form-right__overview p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--dark-red);
+}
+
+.booking-form-right__overview ul li {
+  text-align: left;
+}
+
+.booking-form-right__overview ul li::before {
+  content: '';
+  margin-right: 25px;
+  /* background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-date.svg');
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-time.svg'); */
+}
+
+.booking-form-right__overview ul li.overview-date {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-date.svg');
+}
+.booking-form-right__overview ul li.overview-time {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-time.svg');
+}
+.booking-form-right__overview ul li.overview-type {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-type-check.svg');
+}
+
+.overview-img-right {
+  position: absolute;
+  background-image: url('../img/booking-overview-louvre-mini.jpg');
+  width: 150px;
+  height: 120px;
+  top: 0;
+  right: 0;
+}
+
+.booking-form-right__subtotal {
+}
+.br {
+}
+.booking-form-right-br {
+}
+.booking-form-right__total {
+}
+.booking-form-right__card-details {
+}
+.booking-form-right .button {
+  width: 300px;
+  height: 50px;
+  background-color: red;
+}
+.transition {
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
