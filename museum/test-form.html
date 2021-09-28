@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booking</title>
+    <link rel="stylesheet" href="assets/css/style-booking.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="form__container">
+        <div class="ticket__form__left">
+          <div class="ticket__title">
+            <div class="ticket__logo"></div>
+            <h2 class="book__ticket">Booking tickets</h2>
+            <p class="desc__ticket">Tour to Louvre</p>
+          </div>
+          <!-- <input  class="ticket__left__item" id="ticket__date" placeholder="Date" value="Date" type="date"> -->
+          <div class="ticket__date__time">
+            <input class="ticket__left__item" placeholder="Date" id="ticket__date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" />
+            <input class="ticket__left__item" placeholder="Time" id="ticket__time" type="time" />
+          </div>
+          <input class="ticket__left__item" id="ticket__name" placeholder="Name" type="text" />
+          <input class="ticket__left__item" id="ticket__email" placeholder="E-mail" type="email" />
+          <input class="ticket__left__item" id="ticket__tel" placeholder="Phone" type="tel" />
+          <select id="form__ticket__type" class="ticket__left__item">
+            <option value="">Ticket Type</option>
+            <option value="">Permanent exhibition</option>
+            <option value="">Temporary exhibition</option>
+            <option value="">Combined Admission</option>
+          </select>
+
+          <div class="entry__ticket">
+            <div class="entry__ticket__container">
+              <div class="entry__header">
+                <h2 class="entry__desc__ticket">Entry Ticket</h2>
+              </div>
+
+              <div class="entry__container">
+                <div class="calculate__entry__ticket">
+                  <div class="description__entry__ticket">
+                    <p class="title__entry__ticket">Basic 18+ (20 €)</p>
+                  </div>
+                  <div class="entry__calculate">
+                    <button class="entry__btn__calculate" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
+                    <input type="number" min="0" max="20" value="2" readonly class="entry__number" />
+                    <button class="entry__btn__calculate btn_plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>
+                <div class="calculate__entry__ticket">
+                  <div class="description__entry__ticket">
+                    <p class="title__entry__ticket">Senior 65+ (10 €)</p>
+                  </div>
+                  <div class="entry__calculate">
+                    <button class="entry__btn__calculate" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
+                    <input type="number" min="0" max="20" value="2" readonly class="entry__number" />
+                    <button class="entry__btn__calculate btn_plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ticket__form__right">
+          <div class="payment__container">
+            <div class="payment__title">
+              <div class="payment__title__left">
+                <h2 class="title__overview">Overview</h2>
+                <p class="title__type">Tour to Louvre</p>
+                <p>Friday, August 19</p>
+                <p>16 : 30</p>
+                <p>Temporary exhibition</p>
+              </div>
+              <div class="payment__title__right">
+                <img src="assets/img/payment-title-museum.png" alt="" />
+              </div>
+            </div>
+
+            <div class="payment__result underline-title">
+              <div class="payment__result__left">
+                <p>2 Basic (20 €)</p>
+                <p>2 Senior (10 €)</p>
+              </div>
+
+              <div class="payment__result__right">
+                <p>40 €</p>
+                <p>20 €</p>
+              </div>
+            </div>
+
+            <div class="payment__result__total">
+              <div class="payment__total__left">
+                <p>Total:</p>
+              </div>
+              <div class="payment__total__right">
+                <p>60 €</p>
+              </div>
+            </div>
+
+            <div class="payment__card">
+              <div class="front__side__card">
+                <div class="front__side__container">
+                  <p class="card__title">Card number</p>
+                  <input type="text" class="card__number" />
+
+                  <p class="card__title">Expiration date</p>
+                  <div class="date__input">
+                    <input type="number" id="input__date" placeholder="03" />
+                    <input type="number" id="input__date" placeholder="2024" />
+                  </div>
+
+                  <p class="card__title">Cardholder name</p>
+                  <input type="text" class="cardholder__name" />
+                </div>
+              </div>
+              <div class="back__size__card"></div>
+            </div>
+
+            <div class="payment__btn__book">
+              <button class="btn-book ripple circle" onclick="myFunction()">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
