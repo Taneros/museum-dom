@@ -1125,9 +1125,9 @@ input[type='number']::-webkit-inner-spin-button {
 /*** ->> tickets__booking section buy  ***/
 .tickets__booking {
   height: 100%;
-  /* width: 0; */
+  width: 0;
   /* comment 0 width for editing and uncomment width 100% */
-  width: 100%;
+  /* width: 100%; */
   position: fixed;
   z-index: 10;
   top: 0;
