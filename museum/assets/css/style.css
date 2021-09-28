@@ -1224,7 +1224,7 @@ form {
 .booking-form-right {
   width: 530px;
   height: 663px;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .booking-form-logo {
@@ -1407,14 +1407,12 @@ h3.booking-form-header {
   justify-content: space-between;
 }
 
-/* ------------------ */
-
 .entry-inputs-buy-btn ul:nth-child(2) {
   margin-top: 18px;
 }
 
 .entry-inputs-buy-btn ul {
-  width: 115px;
+  width: 100px;
   height: 25px;
   /* height: 50px; */
   /* margin-top: 15px; */
@@ -1475,9 +1473,9 @@ input[type='number']::-webkit-inner-spin-button {
 
 .entry-input-age {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-around;
-  align-items: c;
+  align-items: center;
 }
 
 .entry-input-age p {
@@ -1487,6 +1485,187 @@ input[type='number']::-webkit-inner-spin-button {
   color: var(--font-black);
 }
 
+/* --------------Booking tickets right section---------- */
+
+.booking-form-right {
+  padding: 25px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+  max-width: 530px;
+}
+.booking-form-right__overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 470px;
+  height: 151px;
+  /* background-color: rosybrown; */
+  position: relative;
+}
+
+.booking-form-right__overview h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 2px;
+}
+.booking-form-right__overview p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--dark-red);
+}
+
+.booking-form-right__overview ul {
+  margin-top: 10px;
+}
+
+.booking-form-right__overview ul li {
+  text-align: left;
+  /* line-height: 19px; */
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.booking-form-right__overview ul li::before {
+  content: '';
+  margin-right: 30px;
+  /* background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-date.svg');
+  background-position: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-time.svg'); */
+}
+
+.booking-form-right__overview ul li.overview-date {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-date.svg');
+}
+.booking-form-right__overview ul li.overview-time {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-time.svg');
+}
+.booking-form-right__overview ul li.overview-type {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-image: url('../svg/booking-type-check.svg');
+}
+
+.overview-img-right {
+  position: absolute;
+  background-image: url('../img/booking-overview-louvre-mini.jpg');
+  width: 150px;
+  height: 120px;
+  top: 0;
+  right: 0;
+}
+
+.booking-form-right__subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0px 5px 0px;
+}
+
+.booking-form-right__subtotal {
+}
+
+.booking-form-right__subtotal > * + * {
+  margin-top: 7px;
+}
+
+.subtotal-basic,
+.subtotal-senior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.subtotal-basic::before {
+  content: '';
+  /* margin-left: 25px; */
+  background-image: url('../svg/booking-ticket-num-2.svg');
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+  /* background-position: 10px; */
+  position: absolute;
+}
+
+.subtotal-basic-num,
+.subtotal-senior-num {
+  width: 32px;
+  height: 20px;
+  background-image: url('../svg/booking-ticket-num-2.svg');
+  margin-right: 10px;
+}
+
+.subtotal-senior-wrapper,
+.subtotal-basic-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.subtotal-basic p,
+.subtotal-senior p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.br .booking-form-right-br {
+  width: 100%;
+}
+.booking-form-right__total {
+}
+
+.booking-form-right__total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.booking-form-right__total p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: var(--font-black);
+}
+
+.booking-form-right__card-details {
+  width: 470px;
+  height: 241px;
+  background-image: url('../img/booking-card-details.jpg');
+  margin: 10px 0px 26px 0;
+}
+
+button.booking-form-right {
+  width: 220px;
+  height: 45px;
+  background-color: var(--dark-red);
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.8;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 26px;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+}
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /*** ->> Parallax Section  */
