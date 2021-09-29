@@ -287,8 +287,6 @@ div.welcome-container.container {
 }
 
 .slider__pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   /* margin-left: 70px;
@@ -323,8 +321,6 @@ div.welcome-container.container {
 
 .slider__arrows {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -356,8 +352,10 @@ div.welcome-container.container {
 }
 
 .slider__left-arrow:hover,
-.slider__right-arrow:hover {
+.slider__right-arrow:hover,
+.slider__box:hover {
   filter: invert(0.5) sepia(5);
+  transform: scale(1.5);
 }
 
 /* Main font for header + in small sections change only font-size line-height */
@@ -788,20 +786,16 @@ div.welcome-container.container {
   background-color: var(--bg-dark);
 }
 
-.slider__right-arrow {
-  width: 30px;
-  height: 8px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-}
+/* interaction */
 
 .player-playlist__left-arrow:hover,
-.player-playlist__right-arrow:hover {
+.player-playlist__right-arrow:hover,
+.player-playlist__circle:hover {
   filter: invert(0.5) sepia(5);
+  transform: scale(2);
 }
+
+/* TODO make a common rule for scaling up */
 
 /*** --> Gallery  ***/
 
