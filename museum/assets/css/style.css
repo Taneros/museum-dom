@@ -749,8 +749,6 @@ div.welcome-container.container {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  cursor: pointer;
   background: transparent;
 }
 
@@ -760,8 +758,6 @@ div.welcome-container.container {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  cursor: pointer;
   background: transparent;
   /* transform: rotateZ(180deg); */
 }
@@ -779,7 +775,7 @@ div.welcome-container.container {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: #999999;
+  background-color: var(--font-gold);
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -789,7 +785,7 @@ div.welcome-container.container {
 }
 
 .player-playlist__circles .active-circle {
-  background-color: #333333;
+  background-color: var(--bg-dark);
 }
 
 .slider__right-arrow {
