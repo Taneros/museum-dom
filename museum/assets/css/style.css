@@ -426,11 +426,6 @@ div.welcome-container.container {
 
 /* -->> Underline animation */
 
-.card .br-card {
-  width: 300px;
-  margin-bottom: 10px;
-}
-
 .card {
   cursor: pointer;
   color: #000;
@@ -442,8 +437,9 @@ div.welcome-container.container {
 
 .card .br-card {
   height: 2px;
-  width: 100px;
+  width: 300px;
   background-color: #710707;
+  margin-bottom: 10px;
   transition: all 0.9s;
 }
 
