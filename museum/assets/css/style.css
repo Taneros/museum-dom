@@ -1125,9 +1125,9 @@ input[type='number']::-webkit-inner-spin-button {
 /*** ->> tickets__booking section buy  ***/
 .tickets__booking {
   height: 100%;
-  width: 0;
+  /* width: 0; */
   /* comment 0 width for editing and uncomment width 100% */
-  /* width: 100%; */
+  width: 100%;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -1642,12 +1642,141 @@ input[type='number']::-webkit-inner-spin-button {
   color: var(--font-black);
 }
 
+/* ----Credit card section----- */
+
 .booking-form-right__card-details {
   width: 470px;
   height: 241px;
-  background-image: url('../img/booking-card-details.jpg');
+  /* background-image: url('../img/booking-card-details.jpg'); */
   margin: 10px 0px 26px 0;
+  position: relative;
 }
+
+input {
+  overflow: visible;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* credit card front */
+
+.card-details__front-side {
+  position: relative;
+  width: 360px;
+  height: 211px;
+  background-color: #bcbcbc;
+  padding: 15px 20px 5px 20px;
+  z-index: 1;
+  text-align: start;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.card-details__front-side * {
+  /* margin: 0 auto 0 0; */
+}
+
+.card-details__front-side label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card-details__front-side input {
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.card-details__front-side input[type='number']::-webkit-inner-spin-button,
+.card-details__front-side input[type='number']::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.card-details__front-side #card-details__card-number {
+  width: 215px;
+}
+
+.card-details__front-side #card-details__card-number::-webkit-inner-spin-button,
+.card-details__front-side #card-details__card-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card-details__front-side #card-details__card-date {
+  width: 100px;
+  margin-right: 15px;
+}
+
+.card-details__front-side #card-details__card-time {
+  width: 100px;
+}
+
+.card-details__front-side #card-details__card-name {
+  width: 320px;
+  margin-bottom: 5px;
+}
+
+.card-details__front-side .card-details__card-image {
+  position: absolute;
+  top: 34px;
+  right: 20px;
+  z-index: 300;
+  height: 63px;
+  width: 55px;
+  background-image: url('../img/visa-master-logo.png');
+  background-repeat: no-repeat;
+}
+
+/* credit card back side */
+
+.card-details__back-side {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 360px;
+  height: 211px;
+  background-color: #939393;
+}
+
+.card-details__back-side .card-details__magnet-stripe {
+  display: block;
+  height: 45px;
+  width: 100%;
+  background-color: #000000;
+  margin-top: 25px;
+}
+
+.card-details__back-side .card-details__card-cvc {
+  margin: 15px 20px 15px 265px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-details__back-side #card-details__cvc {
+  width: 74px;
+  height: 35px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-details__back-side .card-details__card-cvc p {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* booking button*/
 
 button.booking-form-right {
   width: 220px;
@@ -1666,6 +1795,7 @@ button.booking-form-right {
   align-items: center;
   align-self: end;
 }
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /*** ->> Parallax Section  */
@@ -1676,7 +1806,7 @@ button.booking-form-right {
 .parallax-container {
   height: 400px;
   min-width: 100%;
-  background-image: url('../img/parallax.jpg');
+  background-image: url('../img/parallax-from-figma-HD.jpg');
   background-size: cover;
   background-attachment: fixed;
 }

@@ -351,7 +351,31 @@
                         <p>Total:</p>
                         <p>60 €</p>
                       </div>
-                      <div class="booking-form-right__card-details"></div>
+                      <div class="booking-form-right__card-details">
+                        <div class="card-details__front-side">
+                          <label for="card-details__card-number">Card Number</label>
+                          <input type="number" id="card-details__card-number" class="card-details__card-number" />
+                          <label>Expiration date</label>
+                          <input id="card-details__card-date" type="number" min="01" max="12" value="01" />
+                          <input id="card-details__card-time" type="number" min="2021" value="2021" />
+                          <label for="card-details__card-name">Cardholder name</label>
+                          <input id="card-details__card-name" type="text" />
+                          <span class="card-details__card-image"></span>
+                        </div>
+                        <div class="card-details__back-side">
+                          <span class="card-details__magnet-stripe"></span>
+                          <div class="card-details__card-cvc">
+                            <label for="card-details__cvc">CVC/CVV</label>
+                            <input type="text" id="card-details__cvc" />
+                            <p>
+                              The last<br />
+                              3 or 4 digits<br />
+                              on back<br />
+                              of the card
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                       <button type="button" class="booking-form-right button transition">Book</button>
                     </div>
                   </div>
