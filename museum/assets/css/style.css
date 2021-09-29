@@ -563,7 +563,7 @@ div.welcome-container.container {
   margin-bottom: 75px;
 }
 
-/*** -->> Video Section ***/
+/*** -->> Video Journey Section ***/
 
 .video {
   background-color: #fff;
@@ -721,38 +721,90 @@ div.welcome-container.container {
 /* -> Player Playlist */
 
 .player-playlist {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 1440px;
   margin-top: 40px;
-  height: 306px;
-}
-.player-playlist__video-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.player-playlist__video-slide {
-  height: 254px;
-  width: 452px;
-}
-.player-playlist__video-slide.slide-1 {
-  background-image: url('../img/video-slide-item-1.jpg');
-}
-.player-playlist__video-slide.slide-2 {
-  background-image: url('../img/video-slide-item-2.jpg');
-}
-.player-playlist__video-slide.slide-3 {
-  background-image: url('../img/video-slide-item-3.jpg');
 }
 
-.player-playlist__paginator {
-  /* margin: 40px auto 0 auto; */
-  width: 200px;
+.player-playlist__slides {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.player-playlist__slides iframe {
+  flex-basis: 452px;
+  flex-shrink: 0;
+  height: 254px;
+  margin-right: 42px;
+}
+
+.player-playlist__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.player-playlist__left-arrow {
+  width: 10px;
   height: 12px;
-  background-image: url('../img/video-slider-pagination.jpg');
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.player-playlist__right-arrow {
+  width: 10px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+  /* transform: rotateZ(180deg); */
+}
+
+.player-playlist__circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  position: relative;
+  bottom: 1px;
+}
+
+.player-playlist__circles .player-playlist__circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #999999;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.player-playlist__circles .player-playlist__circle:last-of-type {
+  margin: 0;
+}
+
+.player-playlist__circles .active-circle {
+  background-color: #333333;
+}
+
+.slider__right-arrow {
+  width: 30px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.player-playlist__left-arrow:hover,
+.player-playlist__right-arrow:hover {
+  filter: invert(0.5) sepia(5);
 }
 
 /*** --> Gallery  ***/
