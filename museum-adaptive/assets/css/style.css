@@ -193,15 +193,17 @@ a {
 
 .welcome {
   width: 100%;
-  background-color: #000;
-  background-image: url('../img/mona-lisa-welcome.jpg');
-  background-size: 1000px 750px;
-  background-repeat: no-repeat;
-  background-position: calc(50% + 220px) 0%;
+  /* background-color: #000; */
+  /* background-image: url('../img/mona-lisa-welcome.jpg'); */
+  /* background-size: 1000px 750px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: calc(50% + 220px) 0%; */
+  background-color: #666666;
 }
 
 .welcome-container {
-  min-height: 810px;
+  /* min-height: 810px; was before */
+  height: 810px;
   position: relative;
 }
 
@@ -277,6 +279,19 @@ div.welcome-container.container {
 
 .welcome__discover-btn:hover {
   /* background-color: #9d8665; */
+}
+
+/* @@@@@@@@ media welcome @@@@@@ */
+@media screen and (max-width: 1440px) {
+  .welcome-container {
+    height: calc(100vw / 1.77);
+    /* min-height: 810px; */
+  }
+  @media (max-width: 1024px) {
+    .welcome-container {
+      height: 585px;
+    }
+  }
 }
 
 /* --------Slider ----- */
