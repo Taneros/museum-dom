@@ -33,6 +33,16 @@ body {
   max-width: 1440px;
 }
 
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-container.container {
+    padding: 0 20px 0 20px !important;
+  }
+}
+
 /* All transitions timings for logos links & buttons */
 .transition {
   transition: all 0.7s;
@@ -82,7 +92,7 @@ a {
   align-items: center;
 }
 
-div.header-container.container {
+.header-container.container {
   padding: 0;
 }
 
@@ -161,6 +171,17 @@ div.header-container.container {
 /* section background */
 .dark-bg {
   background-color: #000;
+}
+
+/*@@@@@@@ media header @@@@@@@  */
+
+@media screen and (max-width: 1024px) {
+  .header-container {
+    min-height: 130px;
+  }
+  .header__nav {
+    display: none;
+  }
 }
 
 /** -->> Main content **/
@@ -546,7 +567,8 @@ div.welcome-container.container {
 }
 
 .explore__picture {
-  width: 720px;
+  max-width: 720px;
+  width: 100%;
   height: 700px;
   background-image: url('../img/picture-explore-restore.jpg');
   background-size: cover;
@@ -1269,7 +1291,8 @@ input[type='number']::-webkit-inner-spin-button {
 .tickets__booking-overlay {
   position: relative;
   top: 25%;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   height: 845px;
   text-align: center;
   margin: 0 auto;
@@ -2169,6 +2192,14 @@ footer {
   filter: invert(0.5) sepia(1);
   /* background-color: #fff; */
   /* transition: filter 0.7s; */
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-container-upper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-br {
