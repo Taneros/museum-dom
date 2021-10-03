@@ -41,6 +41,12 @@ body {
   .header-container.container {
     padding: 0 20px 0 20px !important;
   }
+  @media (max-width: 1024px) {
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
 }
 
 /* All transitions timings for logos links & buttons */
@@ -77,6 +83,14 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* TODO add smoth change like in welcome seciton */
+  .section-header {
+    font-size: 50px;
+    line-height: 75px;
+  }
 }
 
 /** -->> Header **/
@@ -430,12 +444,6 @@ div.welcome-container.container {
   z-index: 10;
 }
 
-.card-bg1 {
-  min-height: 285px;
-  background-image: url('../img/royal-palace.jpg');
-  background-size: cover;
-}
-
 /* -->> card background expand animation */
 
 .card::after {
@@ -500,7 +508,6 @@ div.welcome-container.container {
 }
 
 .card__text {
-  font-family: Roboto;
   font-weight: 200;
   font-style: normal;
   font-size: 22px;
@@ -508,31 +515,81 @@ div.welcome-container.container {
   text-transform: capitalize;
 }
 
+.card div:first-child {
+  height: 285px;
+}
+
+.card-bg1 {
+  /* min-height: 285px; */
+  background-image: url('../img/royal-palace.jpg');
+  background-size: cover;
+}
+
 .card-bg2 {
-  min-height: 285px;
+  /* min-height: 285px; */
   background-image: url('../img/denon-wing.jpg');
   background-size: cover;
 }
 
 .card-bg3 {
-  min-height: 285px;
+  /* min-height: 285px; */
   background-image: url('../img/colonnade.jpg');
   background-size: cover;
 }
 .card-bg4 {
-  min-height: 285px;
+  /* min-height: 285px; */
   background-image: url('../img/greek-hall.jpg');
   background-size: cover;
 }
 .card-bg5 {
-  min-height: 285px;
+  /* min-height: 285px; */
   background-image: url('../img/mona-lisa.jpg');
   background-size: cover;
 }
 .card-bg6 {
-  min-height: 285px;
+  /* min-height: 285px; */
   background-image: url('../img/night-palace.jpg');
   background-size: cover;
+}
+
+/* @@@@@@ media virtual visiting tour @@@@@@@@ */
+
+@media screen and (max-width: 1024px) {
+  /* TODO add smoth change like in welcome seciton in section header too*/
+  .visiting__header {
+    margin-bottom: 20px;
+  }
+
+  .card__header {
+    font-size: 28px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 3px;
+  }
+  .card__text {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .card__text:last-child {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .card div:first-child {
+    height: 215px;
+    width: 330px;
+  }
+  .visiting__cards .card {
+    width: 330px;
+    height: 345px;
+  }
+  .visiting__cards {
+    width: 768px;
+    gap: 60px 108px;
+    margin: 0 auto;
+  }
+  .visiting__br {
+    margin-bottom: 60px;
+  }
 }
 
 /*** Explore Section ***/
