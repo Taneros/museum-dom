@@ -49,6 +49,13 @@ body {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .br {
+    margin-bottom: 60px !important;
+    width: 100% !important;
+  }
+}
+
 /* All transitions timings for logos links & buttons */
 .transition {
   transition: all 0.7s;
@@ -86,10 +93,11 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  /* TODO add smoth change like in welcome seciton */
+  /* TODO add smoth change like in welcome section */
   .section-header {
     font-size: 50px;
     line-height: 75px;
+    margin-bottom: 20px !important;
   }
 }
 
@@ -649,6 +657,33 @@ div.welcome-container.container {
 
 .explore__br {
   margin-bottom: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  .explore-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .explore__text {
+    width: 100%;
+  }
+
+  .explore__text p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 35px;
+  }
+  .explore__picture {
+    margin-top: 62px;
+  }
+  .explore__text p:last-of-type {
+    display: none;
+  }
+  .explore__text br {
+    display: none;
+  }
 }
 
 /*** -->> Video Journey Section ***/
