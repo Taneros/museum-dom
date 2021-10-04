@@ -1161,7 +1161,7 @@ div.welcome-container.container {
 .tickets {
   color: var(--bg-dark);
   background-color: #ffffff;
-  min-height: 743px;
+  /* min-height: 743px; */
   padding: 0px 0;
 }
 
@@ -1477,7 +1477,44 @@ input[type='number']::-webkit-inner-spin-button {
   }
 }
 
-/*** ->> tickets__booking section buy  ***/
+/* @@@@@@@@@ media Buy Tickets @@@@@@@@@@@ */
+
+@media screen and (max-width: 1024px) {
+  .tickets {
+    /* min-height: auto; */
+  }
+
+  .tickets__picture {
+    max-width: 700px;
+    max-height: 440px;
+  }
+
+  .tickets__buy-type {
+    display: none;
+  }
+  .tickets__buy {
+    width: auto;
+    margin-right: 29px;
+  }
+  .tickets__buy-amount form {
+    align-items: flex-start;
+  }
+  .tickets__buy-amount h3 {
+  }
+  .buy-btn {
+    width: 175px;
+  }
+  .tickets__buy-amount .age {
+    margin-bottom: 25px;
+  }
+  /* h3 total */
+  .tickets__buy-amount h3:nth-last-of-type(1) {
+    margin-top: 25px;
+    margin-bottom: 66px;
+  }
+}
+
+/*** ->> tickets__booking section overlay buy  ***/
 .tickets__booking {
   height: 100%;
   width: 0;
