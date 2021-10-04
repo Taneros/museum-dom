@@ -37,6 +37,7 @@ body {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 100vw;
   }
   .header-container.container {
     padding: 0 20px 0 20px !important;
@@ -216,12 +217,12 @@ a {
 
 .welcome {
   width: 100%;
-  /* background-color: #000; */
-  /* background-image: url('../img/mona-lisa-welcome.jpg'); */
-  /* background-size: 1000px 750px; */
-  /* background-repeat: no-repeat; */
-  /* background-position: calc(50% + 220px) 0%; */
-  background-color: #666666;
+  background-color: #000;
+  background-image: url('../img/mona-lisa-welcome.jpg');
+  background-size: 1000px 750px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 220px) 0%;
+  /* background-color: #666666; */
 }
 
 .welcome-container {
@@ -261,7 +262,7 @@ div.welcome-container.container {
   letter-spacing: 2px;
   /* word-spacing: 0.1em; */
   color: #ffffff;
-  padding-top: 26px;
+  margin-top: 26px;
 }
 
 .welcome__discover-btn {
@@ -319,7 +320,7 @@ div.welcome-container.container {
 
 /* --------Slider ----- */
 .welcome__slider {
-  width: 100%;
+  width: 451px;
 }
 
 .welcome__slider-pagination {
@@ -342,7 +343,7 @@ div.welcome-container.container {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0 75px 0 75px;
+  /* padding: 0 75px 0 75px; */
 }
 
 .slider__pages {
@@ -384,7 +385,8 @@ div.welcome-container.container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  bottom: 2px;
+  /* bottom: 2px; */
+  align-items: baseline;
   /* margin-left: 60px; */
   /* margin-right: 100px; */
   width: 80px;
@@ -415,6 +417,66 @@ div.welcome-container.container {
 .slider__box:hover {
   filter: invert(0.5) sepia(5);
   transform: scale(1.5);
+}
+
+/* @@@@@@@@ media welcome @@@@@@ */
+@media screen and (max-width: 1440px) {
+  .welcome-container {
+    height: calc(100vw / 1.77);
+    /* min-height: 810px; */
+  }
+  @media (max-width: 1024px) {
+    .welcome-container {
+      height: 585px;
+    }
+    .welcome__discover {
+      /* width: 396px; */
+      height: 343px;
+      top: 50px;
+      position: absolute;
+    }
+    .welcome__discover-header {
+      font-size: 50px;
+    }
+    .welcome__discover-text {
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 25px;
+    }
+    .welcome__discover-btn {
+      font-size: 20px;
+      line-height: 23px;
+      width: 300px;
+      height: 60px;
+    }
+    .welcome__slider {
+      max-width: 401px;
+    }
+    .slider-container {
+      width: 401px;
+      padding: 0;
+    }
+    .slider__pages {
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    .slider__controls {
+      width: 160px;
+    }
+    .slider__controls .slider__box {
+      width: 12px;
+      height: 12px;
+    }
+    .welcome {
+      width: 100%;
+      background-color: #000;
+      background-image: url('../img/mona-lisa-welcome.jpg');
+      background-size: 700px 525px;
+      background-repeat: no-repeat;
+      background-position: calc(50% + 142px) 0%;
+    }
+  }
 }
 
 /* Main font for header + in small sections change only font-size line-height */
