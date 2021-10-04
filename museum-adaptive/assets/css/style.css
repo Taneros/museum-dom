@@ -2257,11 +2257,37 @@ button.booking-form-right {
 }
 
 .contacts__map {
+  /* width: 960px; */
   width: 960px;
   height: 620px;
   background-color: #fff;
   background-image: url('../svg/contacts-map.png');
   background-size: cover;
+}
+
+/* ******  @media contacts ********* */
+
+@media screen and (max-width: 1440px) {
+  .contacts__map {
+    max-width: calc(100vw / 1.48);
+    max-height: calc(100vw / 2.56);
+  }
+  @media screen and (max-width: 1024px) {
+    .contacts__map {
+      max-width: 694px;
+      max-height: 454px;
+    }
+    .contacts__text h3 {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 35px;
+    }
+    .contacts__text p {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 /*** -->> Footer Section  ***/
