@@ -291,9 +291,6 @@ div.welcome-container.container {
 }
 
 .welcome__discover-btn {
-}
-
-.welcome__discover-btn {
   font-weight: 200;
   font-size: 22px;
   line-height: 26px;
@@ -303,19 +300,6 @@ div.welcome-container.container {
 
 .welcome__discover-btn:hover {
   /* background-color: #9d8665; */
-}
-
-/* @@@@@@@@ media welcome @@@@@@ */
-@media screen and (max-width: 1440px) {
-  .welcome-container {
-    height: calc(100vw / 1.77);
-    /* min-height: 810px; */
-  }
-  @media (max-width: 1024px) {
-    .welcome-container {
-      height: 585px;
-    }
-  }
 }
 
 /* --------Slider ----- */
@@ -382,8 +366,6 @@ div.welcome-container.container {
 .slider__arrows {
   position: relative;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   /* bottom: 2px; */
   align-items: baseline;
@@ -910,7 +892,7 @@ div.welcome-container.container {
 /* -> Player Playlist */
 
 .player-playlist {
-  width: 1440px;
+  max-width: 1440px;
   margin-top: 40px;
 }
 
@@ -1541,38 +1523,46 @@ input[type='number']::-webkit-inner-spin-button {
 
 /* @@@@@@@@@ media Buy Tickets @@@@@@@@@@@ */
 
-@media screen and (max-width: 1024px) {
-  .tickets {
-    /* min-height: auto; */
-  }
-
-  .tickets__picture {
-    max-width: 700px;
-    max-height: 440px;
-  }
-
+@media screen and (max-width: 1440px) {
   .tickets__buy-type {
-    display: none;
+    margin-left: 20px;
   }
   .tickets__buy {
-    width: auto;
-    margin-right: 29px;
+    margin-left: 30px;
   }
-  .tickets__buy-amount form {
-    align-items: flex-start;
-  }
-  .tickets__buy-amount h3 {
-  }
-  .buy-btn {
-    width: 175px;
-  }
-  .tickets__buy-amount .age {
-    margin-bottom: 25px;
-  }
-  /* h3 total */
-  .tickets__buy-amount h3:nth-last-of-type(1) {
-    margin-top: 25px;
-    margin-bottom: 66px;
+  @media (max-width: 1024px) {
+    .tickets {
+      /* min-height: auto; */
+    }
+
+    .tickets__picture {
+      max-width: 700px;
+      max-height: 440px;
+    }
+
+    .tickets__buy-type {
+      display: none;
+    }
+    .tickets__buy {
+      width: auto;
+      margin-right: 29px;
+    }
+    .tickets__buy-amount form {
+      align-items: flex-start;
+    }
+    .tickets__buy-amount h3 {
+    }
+    .buy-btn {
+      width: 175px;
+    }
+    .tickets__buy-amount .age {
+      margin-bottom: 25px;
+    }
+    /* h3 total */
+    .tickets__buy-amount h3:nth-last-of-type(1) {
+      margin-top: 25px;
+      margin-bottom: 66px;
+    }
   }
 }
 
