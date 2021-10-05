@@ -608,7 +608,8 @@ div.welcome-container.container {
       justify-content: flex-start;
     }
     .welcome__slider-pagination {
-      position: inherit;
+      right: 24%;
+      bottom: 32px;
     }
     .welcome__discover > form {
       display: none;
@@ -1296,6 +1297,7 @@ div.welcome-container.container {
     }
     .player-playlist__controls {
       margin-top: 20px;
+      margin-bottom: 40px;
     }
     .player-playlist__slides iframe {
       max-width: 354px;
@@ -1414,6 +1416,24 @@ div.welcome-container.container {
     top: auto;
     bottom: 0;
     z-index: 5;
+  }
+  @media (max-width: 769px) {
+    .section-header.gallery__header {
+      font-size: 40px;
+      line-height: 60px;
+      margin-bottom: 0 !important;
+    }
+    .gallery__inner-container img {
+      max-width: 352px;
+    }
+    .gallery__inner-container {
+      width: 100%;
+      column-gap: 24px;
+      height: 5200px;
+    }
+    .gallery__picture-container {
+      max-height: 1080px;
+    }
   }
 }
 
