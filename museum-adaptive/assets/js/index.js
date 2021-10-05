@@ -5,6 +5,10 @@
 
 const progress = document.querySelectorAll('.progress')
 
+const burgerMenu = document.getElementById('burgerMenu')
+
+const sidenav = document.getElementById('headerSidenav')
+
 progress.forEach((el) =>
   el.addEventListener('input', function () {
     const value = this.value
@@ -85,7 +89,7 @@ button.forEach((el) =>
     }, 350)
   })
 )
-// overlay
+// overlay buy tickets
 
 function openNav() {
   document.getElementById('book').style.width = '100%'
@@ -93,6 +97,30 @@ function openNav() {
 
 function closeNav() {
   document.getElementById('book').style.width = '0%'
+}
+
+// burgrer menu
+// function burgerMenu(press) {
+//   press.classList.toggle('change')
+// }
+
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('change')
+  sidenav.classList.toggle('pop')
+  document.querySelector('.welcome__discover').classList.toggle('hide')
+})
+
+// scroll keep burger visible
+
+if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window && 'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
+  let observer = new IntersectionObserver((entries) => {
+    if (entries[0].boundingClientRect.y < 0) {
+      burgerMenu.classList.add('scrolled')
+    } else {
+      burgerMenu.classList.remove('scrolled')
+    }
+  })
+  observer.observe(document.getElementById('anchor'))
 }
 
 // // self-check
