@@ -2772,8 +2772,8 @@ footer {
   /* margin-left: 21px; */
 }
 .footer__nav {
-  max-width: 363px;
-  max-height: 128px;
+  width: 363px;
+  height: 128px;
 }
 
 .footer__list {
@@ -2987,6 +2987,40 @@ footer {
   }
   .footer-container-upper {
     margin-bottom: 45px;
+  }
+
+  @media (max-width: 769px) {
+    .footer__logo {
+      margin-top: 5px;
+    }
+
+    .footer__logo-text {
+      letter-spacing: 5px;
+    }
+
+    .footer-container-upper {
+      flex-wrap: wrap;
+      height: auto;
+      margin-bottom: 40px;
+    }
+    .footer__nav {
+      width: 393px;
+      margin: 17px 37px 35px 0;
+    }
+    .footer__list {
+      margin: 0;
+      grid-gap: 25px 119px;
+    }
+    .footer__link {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .footer__social {
+      margin: 0 88px 0 auto;
+    }
+    .student-info {
+      height: 100px;
+    }
   }
 }
 
