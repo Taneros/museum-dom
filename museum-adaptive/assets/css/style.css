@@ -948,6 +948,27 @@ div.welcome-container.container {
   .explore__text br {
     display: none;
   }
+
+  @media (max-width: 769px) {
+    .explore-container {
+      min-height: auto;
+    }
+    .section-header.explore__header {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    .explore__br.br {
+      margin-bottom: 40px;
+    }
+    .explore__text p {
+      display: none;
+    }
+    .explore__picture {
+      margin-top: 0px;
+      width: 728px;
+      height: 705px;
+    }
+  }
 }
 
 /*** -->> Video Journey Section ***/
