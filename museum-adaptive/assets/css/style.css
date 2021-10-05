@@ -221,7 +221,7 @@ a {
 
 .change .nav-burger-bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-7px, 7px);
 }
 
 .change .nav-burger-bar2 {
@@ -230,7 +230,7 @@ a {
 
 .change .nav-burger-bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-5px, -2px);
+  transform: rotate(45deg) translate(-4px, -5px);
 }
 
 /*@@@@@@@ media header @@@@@@@  */
@@ -265,14 +265,14 @@ a {
     height: 5px;
   }
 
-  .change .nav-burger-bar1 {
+  .header__nav-burger.scrolled.change .nav-burger-bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-12px, 8px);
   }
 
-  .change .nav-burger-bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -4px);
+  .header__nav-burger.scrolled.change .nav-burger-bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, 7px);
+    transform: rotate(45deg) translate(-8px, -3px);
   }
 
   .header__nav {
