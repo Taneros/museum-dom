@@ -934,6 +934,9 @@ div.welcome-container.container {
   .explore__text {
     width: 100%;
   }
+  .explore__br.br {
+    margin-bottom: 60px;
+  }
 
   .explore__text p {
     font-size: 20px;
@@ -1150,6 +1153,7 @@ div.welcome-container.container {
 
 .player-playlist__controls {
   margin-top: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .player-playlist__controls-wrapper {
@@ -1222,6 +1226,9 @@ div.welcome-container.container {
   }
   .video__header {
     margin-bottom: 0px;
+  }
+  .video__player {
+    height: auto;
   }
   /* player */
   .player-window {
@@ -1843,6 +1850,10 @@ input[type='number']::-webkit-inner-spin-button {
   @media (max-width: 1024px) {
     .tickets {
       /* min-height: auto; */
+    }
+
+    .tickets__br.br {
+      margin-bottom: 60px;
     }
 
     .tickets__picture {
@@ -2676,6 +2687,9 @@ button.booking-form-right {
     max-height: calc(100vw / 2.56);
   }
   @media screen and (max-width: 1024px) {
+    .contacts-br.br {
+      margin-bottom: 60px;
+    }
     .contacts__map {
       max-width: 694px;
       max-height: 454px;
