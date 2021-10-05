@@ -321,6 +321,11 @@ a {
     position: absolute;
     text-align: center;
   }
+
+  @media (max-width: 769px) {
+    .header-container {
+      min-height: 110px;
+    }
 }
 
 /** -->> Main content **/
