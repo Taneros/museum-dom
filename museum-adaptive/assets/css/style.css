@@ -921,16 +921,6 @@ div.welcome-container.container {
   }
 
   @media (max-width: 769px) {
-    .card__header {
-      font-size: 22px;
-      line-height: 24px;
-      letter-spacing: 3px;
-    }
-    .card__text {
-      font-size: 18px;
-      line-height: 21px;
-    }
-
     .section-header.visiting__header {
       font-size: 40px;
       line-height: 60px;
@@ -947,12 +937,62 @@ div.welcome-container.container {
       width: 280px;
       height: 301px;
     }
+
+    .card__header {
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 3px;
+    }
+    .card__text {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
     .card div:first-child {
       width: 280px;
       height: 180px;
     }
     .visiting__cards {
       margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 421px) {
+    .container.visiting-container {
+      /* padding-bottom: 34px; */
+    }
+
+    .section-header.visiting__header {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .visiting__cards {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 0;
+    }
+
+    .visiting__cards .card {
+      width: 280px;
+      height: 295px;
+    }
+
+    .card__header {
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 5px;
+      margin-bottom: 10px;
+    }
+    .card .br-card {
+      width: 150px;
+    }
+    .card__text {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .card__text:last-child {
+      margin-top: 10px;
     }
   }
 }
