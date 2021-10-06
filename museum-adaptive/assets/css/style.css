@@ -2986,7 +2986,7 @@ button.booking-form-right {
     .section-header.contacts__header {
       font-size: 40px;
       line-height: 60px;
-      margin-bottom: 20 !important;
+      margin-bottom: 20px !important;
     }
 
     .contacts-br.br {
@@ -3007,6 +3007,32 @@ button.booking-form-right {
       max-height: 476px;
       margin-top: 26px;
       margin-bottom: 27px;
+    }
+  }
+  @media screen and (max-width: 421px) {
+    .section-header.contacts__header {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    .contacts-br.br {
+      margin-bottom: 40px;
+    }
+    .contacts__text h3 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .contacts__text p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .contacts__map {
+      max-width: 380px;
+      max-height: 248px;
+      margin-top: 26px;
+      margin-bottom: 0px;
     }
   }
 }
