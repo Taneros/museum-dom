@@ -1656,7 +1656,7 @@ div.welcome-container.container {
       max-height: 1080px;
     }
   }
-  @media (max-width: 769px) {
+  @media (max-width: 421px) {
     .section-header.gallery__header {
       font-size: 28px;
       line-height: 40px;
@@ -3337,6 +3337,82 @@ footer {
     }
     .student-info {
       height: 100px;
+    }
+  }
+  @media (max-width: 421px) {
+    .footer__logo {
+      margin: 0;
+      width: 131px;
+      height: auto;
+    }
+    .footer__logo img {
+      width: 29px;
+      height: 16px;
+    }
+
+    .footer__logo-text {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .footer-container-upper {
+      flex-wrap: wrap;
+      height: auto;
+      margin-bottom: 40px;
+    }
+    .footer__nav {
+      width: 380px;
+      height: auto;
+      margin: 40px 0px 40px 0px;
+    }
+    .footer__list {
+      margin: 0;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'col1-item1 col2-item1 col3-item1'
+        'col1-item2 col2-item2 col3-item2';
+      grid-gap: 30px 87px;
+    }
+
+    .footer__item:nth-child(1) {
+      grid-area: col1-item1;
+    }
+    .footer__item:nth-child(2) {
+      grid-area: col1-item2;
+    }
+    .footer__item:nth-child(3) {
+      grid-area: col2-item1;
+    }
+    .footer__item:nth-child(4) {
+      grid-area: col2-item2;
+    }
+    .footer__item:nth-child(5) {
+      grid-area: col3-item1;
+    }
+    .footer__item:nth-child(6) {
+      grid-area: col3-item2;
+    }
+
+    .footer__link {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .footer__social {
+      margin: 0 auto;
+    }
+    .footer__social .icons {
+      width: 260px;
+    }
+    .student-info {
+      height: 100px;
+    }
+    .student-info__details p,
+    .student-info__details * {
+      font-size: 16px;
+    }
+    .student-info__details > a:nth-child(2) {
+      display: none;
     }
   }
 }
