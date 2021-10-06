@@ -1656,6 +1656,25 @@ div.welcome-container.container {
       max-height: 1080px;
     }
   }
+  @media (max-width: 769px) {
+    .section-header.gallery__header {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 0 !important;
+    }
+    .gallery__inner-container img {
+      max-width: 178px;
+    }
+    .gallery__inner-container {
+      width: 100%;
+      column-gap: 24px;
+      height: 2200px;
+    }
+
+    .gallery__picture-container {
+      max-height: 637px;
+    }
+  }
 }
 
 /* .gallery__shadow {
