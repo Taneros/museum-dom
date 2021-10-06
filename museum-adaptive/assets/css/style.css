@@ -1106,6 +1106,17 @@ div.welcome-container.container {
       height: 705px;
     }
   }
+  @media (max-width: 421px) {
+    .section-header.explore__header {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .explore__picture {
+      margin-top: 0px;
+      width: 380px;
+      height: 368px;
+    }
+  }
 }
 
 /*** -->> Video Journey Section ***/
