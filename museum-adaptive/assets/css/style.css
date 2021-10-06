@@ -1467,6 +1467,74 @@ div.welcome-container.container {
       height: auto;
     }
   }
+  @media (max-width: 421px) {
+    .container.video-container {
+      padding-top: 36px;
+      padding-bottom: 35px;
+    }
+
+    .video__text {
+      /* margin-top: -4px; */
+    }
+
+    .section-header.video__header {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 0 !important;
+    }
+    .player-window {
+      max-height: 176px;
+    }
+    .player-window-btn {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .player-control {
+      max-height: 50px;
+    }
+    .player-control-wrapper {
+      padding: 0 20px;
+      gap: 15px;
+    }
+
+    button.player-control-play {
+      width: 14px;
+      height: 18px;
+    }
+    button.player-control-volume {
+      width: 18px;
+      height: 14px;
+    }
+    button.player-control-full_scr {
+      width: 18px;
+      height: 18px;
+    }
+    .player-control-progress_bar-vid {
+      max-width: 150px;
+    }
+    .player-control-progress_bar-vol {
+      max-width: 60px;
+    }
+    .player-playlist {
+      margin-top: 40px;
+    }
+    .player-playlist__slides iframe {
+      max-width: 180px;
+      max-height: 101px;
+    }
+    .player-playlist__controls {
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+    .player-playlist__circles .player-playlist__circle {
+      width: 8px;
+      height: 8px;
+    }
+    .player-playlist__controls-wrapper button img {
+      width: 7px;
+      height: 8px;
+    }
+  }
 }
 
 /* TODO make a common rule for scaling up */
