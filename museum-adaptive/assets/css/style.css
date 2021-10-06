@@ -283,7 +283,8 @@ a {
   }
 
   .header__nav {
-    display: none;
+    /* display: none; */
+    display: block;
   }
 
   .header__nav {
@@ -310,7 +311,7 @@ a {
     margin: 35px auto auto 55px;
   }
   .header__nav.pop {
-    display: block;
+    /* display: block; */
     width: 297px;
   }
   .header__link {
