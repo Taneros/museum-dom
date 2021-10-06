@@ -2116,11 +2116,11 @@ input[type='number']::-webkit-inner-spin-button {
       margin-bottom: 66px;
     }
   }
-  @media screen and (max-width: 769px) {
+  @media (max-width: 769px) {
     .section-header.tickets__header {
       font-size: 40px;
       line-height: 60px;
-      margin-bottom: 20 !important;
+      margin-bottom: 20px !important;
     }
 
     .tickets__br.br {
@@ -2149,6 +2149,52 @@ input[type='number']::-webkit-inner-spin-button {
     .tickets__buy-amount h3:nth-last-of-type(1) {
       margin-top: 39px;
       margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 421px) {
+    .section-header.tickets__header {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 20px !important;
+    }
+    .tickets__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .tickets__picture {
+      max-width: 380px;
+      max-height: 160px;
+      background-image: url(../img/tickets.jpg);
+    }
+    .tickets__buy {
+      margin-top: 40px;
+    }
+    .tickets__buy-amount h3 {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .tickets__buy-amount form {
+      align-items: center;
+    }
+    .tickets__buy-amount p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .tickets__buy-amount .age {
+      margin-bottom: 20px;
+    }
+    .buy-btn {
+      margin-top: 15px;
+    }
+    button.tickets__buy-btn {
+      font-weight: 300;
+      font-size: 16px;
+    }
+    .tickets__buy {
+      width: auto;
+      margin: 40px auto 0 auto;
     }
   }
 }
