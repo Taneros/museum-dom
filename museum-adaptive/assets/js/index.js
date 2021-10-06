@@ -93,10 +93,15 @@ button.forEach((el) =>
 
 function openNav() {
   document.getElementById('book').style.width = '100%'
+  burgerMenu.classList.toggle('scrolled')
+  sidenav.classList.remove('pop')
 }
 
 function closeNav() {
   document.getElementById('book').style.width = '0%'
+  burgerMenu.classList.toggle('scrolled')
+  burgerMenu.classList.remove('change')
+  sidenav.classList.remove('pop')
 }
 
 // burgrer menu
