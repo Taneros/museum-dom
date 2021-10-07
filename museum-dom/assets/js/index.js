@@ -1,13 +1,19 @@
-// document.body.style.webkitTransform = 'scale(1)'
-// document.body.style.msTransform = 'scale(100)'
-// document.body.style.transform = 'scale(1)'
-// document.body.style.zoom = screen.logicalXDPI / screen.deviceXDPI
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from 'swiper'
+// import Swiper and modules styles
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+// configure Swiper to use modules
 
 const progress = document.querySelectorAll('.progress')
 
 const burgerMenu = document.getElementById('burgerMenu')
 
 const sidenav = document.getElementById('headerSidenav')
+
+const swiperEl = document.querySelector('.swiper')
 
 progress.forEach((el) =>
   el.addEventListener('input', function () {
@@ -127,6 +133,26 @@ if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window &&
   })
   observer.observe(document.getElementById('anchor'))
 }
+
+/*** Slider Swiper */
+
+Swiper.use([Navigation, Pagination])
+
+export const swiper = new Swiper('.swiper', {
+  slideToClickedSlide: true,
+  simulateTouch: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  allowTouchMove: true,
+  slidesPerView: 'auto',
+})
 
 // // self-check
 // console.log(`
