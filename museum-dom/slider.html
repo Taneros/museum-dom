@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/nullstyle.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/welcome-slider.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
   </head>
   <body>
     <div class="welcome__slider">
@@ -18,11 +17,7 @@
         <!-- Additional required wrapper -->
         <div class="welcome__slider-swiper__wrapper swiper-wrapper">
           <!-- Slides -->
-          <div class="welcome__slider-swiper__slide swiper-slide">
-            <div class="welcome__slider-swiper__image">
-              <img src="assets/img/welcome-slider/1.jpg" alt="1" />
-            </div>
-          </div>
+
           <div class="welcome__slider-swiper__slide swiper-slide">
             <div class="welcome__slider-swiper__image">
               <img src="assets/img/welcome-slider/2.jpg" alt="2" />
@@ -35,25 +30,22 @@
           </div>
           <div class="welcome__slider-swiper__slide swiper-slide">
             <div class="welcome__slider-swiper__image">
-              <img src="assets/img/welcome-slider/4.jpg" alt="3" />
+              <img src="assets/img/welcome-slider/4.jpg" alt="4" />
             </div>
           </div>
           <div class="welcome__slider-swiper__slide swiper-slide">
             <div class="welcome__slider-swiper__image">
-              <img src="assets/img/welcome-slider/5.jpg" alt="3" />
+              <img src="assets/img/welcome-slider/5.jpg" alt="5" />
+            </div>
+          </div>
+          <div class="welcome__slider-swiper__slide swiper-slide">
+            <div class="welcome__slider-swiper__image">
+              <img src="assets/img/welcome-slider/1.jpg" alt="1" />
             </div>
           </div>
         </div>
-        <!-- If we need pagination
-        <div class="swiper-pagination"></div> -->
-
-        <!-- If we need navigation buttons
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
+      <!-- <div class="progress-bar"></div> -->
       <div class="welcome__slider-controls">
         <div class="welcome__slider-controls__container">
           <div class="welcome__slider-controls__pages">
@@ -75,37 +67,6 @@
         </div>
       </div>
     </div>
-    <style></style>
-    <!-- <script src="assets/js/swiper-bundle.esm.browser.min.js"></script> -->
-    <!-- <script src="assets/js/index.js"></script> -->
-    <!-- <script src="assets/js/my-slider.js"></script> -->
-    <!-- <script type="module" src="assets/js/my-slider.js"></script> -->
-    <!-- <script type="module" src="assets/js/index.js"></script> -->
-    <script type="module">
-      import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
-      // import Swiper from '/museum-dom/assets/js/swiper-bundle.min.js'
-      // import Swiper from '/museum-dom/assets/js/swiper-bundle.js'
-      import swiperSettings from '/museum-dom/assets/js/my-slider.js'
-
-      const swiper = new Swiper('.swiper', swiperSettings)
-      const slider_box = document.querySelectorAll('.slider__box')
-      const slider_box_parent = document.querySelector('.welcome__slider-controls__pagination')
-      slider_box.forEach((el) => el.addEventListener('click', () => {}))
-      slider_box_parent.addEventListener('click', (e) => {
-        // console.log(e.target)
-        if (e.target.classList.contains('slider__box')) {
-          swiper.slideTo(e.target.dataset.index)
-        }
-      })
-      swiper.onAny(updateBox)
-      function updateBox() {
-        const currentIndex = swiper.activeIndex % 5
-        slider_box.forEach((el, idx) => {
-          el.classList.toggle('active-box', idx === currentIndex)
-        })
-        document.querySelector('#slider__current').textContent = `0${currentIndex + 1}`
-      }
-    </script>
-    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js</script> -->
+    <script type="module" src="assets/js/my-slider.js"></script>
   </body>
 </html>

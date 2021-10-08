@@ -28,6 +28,12 @@
   width: 100%;
 }
 
+.progress-bar {
+  width: 200px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
 .welcome__slider-controls {
   position: absolute;
   /* width: 451px; */
