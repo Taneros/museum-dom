@@ -1,11 +1,4 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper'
-// import Swiper and modules styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-
-// configure Swiper to use modules
+console.log('index.js is linked successfully')
 
 const progress = document.querySelectorAll('.progress')
 
@@ -136,25 +129,27 @@ if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window &&
 
 /*** Slider Swiper */
 
-Swiper.use([Navigation, Pagination])
+// Swiper.use([Navigation, Pagination])
 
-export const swiper = new Swiper('.swiper', {
-  slideToClickedSlide: true,
-  simulateTouch: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  allowTouchMove: true,
-  slidesPerView: 'auto',
-})
+// const swiper = new Swiper(swiperEl, {
+//   slideToClickedSlide: true,
+//   simulateTouch: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   allowTouchMove: true,
+//   slidesPerView: 'auto',
+// })
 
-// // self-check
+console.log('index.js compliled')
+
+// self-check
 // console.log(`
 
 // 1. Вёрстка валидная +10

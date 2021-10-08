@@ -1,16 +1,8 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper'
-// import Swiper and modules styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+console.log('my-slider.js is linked successfully')
 
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination])
-
-export const swiper = new Swiper('.swiper', {
+const swiperSettings = {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   // If we need pagination
@@ -28,4 +20,6 @@ export const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-})
+}
+
+export default swiperSettings
