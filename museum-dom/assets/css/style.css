@@ -1,4 +1,4 @@
-@import url('./nullstyle.css');
+/* @import url('./nullstyle.css'); */
 
 /* font-family: 'Forum', cursive; */
 
@@ -369,7 +369,7 @@ a {
 .welcome {
   width: 100%;
   background-color: #000;
-  background-image: url('../img/mona-lisa-welcome.jpg');
+  /* background-image: url('../img/mona-lisa-welcome.jpg'); */
   background-size: 1000px 750px;
   background-repeat: no-repeat;
   background-position: calc(50% + 220px) 0%;
@@ -390,6 +390,7 @@ div.welcome-container.container {
   height: 388px;
   top: 150px;
   position: absolute;
+  z-index: 11;
 }
 .welcome__discover.hide {
   display: none;
