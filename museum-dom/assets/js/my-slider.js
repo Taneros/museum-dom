@@ -8,6 +8,12 @@ const swiperSettings = {
   loop: true,
   initialSlide: 4,
   enabled: true,
+  speed: 500,
+  effect: 'fade',
+
+  fadeEffect: {
+    crossFade: true,
+  },
 
   // Navigation arrows
   navigation: {
