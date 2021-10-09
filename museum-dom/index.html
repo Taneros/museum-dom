@@ -166,7 +166,13 @@
             <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
             <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
           </div>
-          <div class="explore__picture"></div>
+          <div class="explore__picture">
+            <div class="c-compare" style="--value: 50%">
+              <img class="c-compare__left" src="./assets/img/explore-slider/before.jpg" alt="before" />
+              <img class="c-compare__right" src="./assets/img/explore-slider/after.jpg" alt="after" />
+              <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+            </div>
+          </div>
         </div>
       </section>
       <section id="video" class="video">

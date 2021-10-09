@@ -1,5 +1,7 @@
 console.log('index.js is linked successfully')
 
+// import './my-slider'
+
 const progress = document.querySelectorAll('.progress')
 
 const burgerMenu = document.getElementById('burgerMenu')
