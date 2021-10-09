@@ -1058,34 +1058,38 @@ div.welcome-container.container {
 
 /* Explore picture compare -> */
 
-.c-compare {
+.pic-compare {
   --h: 1;
   --m: 1rem 0;
   --w: 1;
   --thumb-bgc: #fff;
   --thumb-bgc-focus: var(--dark-red);
-  --thumb-w: 10px;
+  --thumb-w: 20px;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
-.c-compare::after {
-  content: '';
+.pic-compare::after {
+  /* content: '';
   display: block;
-  padding-bottom: calc((var(--h) / var(--w)) * 98%);
+  width: 100%; */
+  /* height: 100%; */
+  /* padding-bottom: calc((var(--h) / var(--w)) * 98%); */
 }
-.c-compare__left,
-.c-compare__right {
+.pic-compare__left,
+.pic-compare__right {
   height: 100%;
   object-fit: cover;
   position: absolute;
   width: 100%;
 }
-.c-compare__left {
+.pic-compare__left {
   clip-path: polygon(0% 0%, var(--value) 0%, var(--value) 100%, 0% 100%);
 }
-.c-compare__right {
+.pic-compare__right {
   clip-path: polygon(100% 0%, var(--value) 0%, var(--value) 100%, 100% 100%);
 }
-.c-compare__range {
+.pic-compare__range {
   background-color: transparent;
   box-sizing: border-box;
   font-family: inherit;
@@ -1096,55 +1100,79 @@ div.welcome-container.container {
   top: 0;
   width: 100%;
 }
-.c-compare__range::-moz-range-thumb {
-  background-color: var(--thumb-bgc);
+.pic-compare__range::-moz-range-thumb {
+  /* background-color: var(--thumb-bgc); */
   cursor: ew-resize;
   height: 100%;
   width: var(--thumb-w);
 }
-.c-compare__range::-webkit-slider-thumb {
-  background-color: var(--thumb-bgc);
+.pic-compare__range::-webkit-slider-thumb {
+  /* background-color: var(--thumb-bgc); */
   cursor: ew-resize;
   height: 100%;
   width: var(--thumb-w);
 }
 
-.c-compare__range::after {
-  background-color: #fff;
+.pic-compare__range::after {
+  /* background-color: #fff; */
   content: '';
   display: block;
   cursor: ew-resize;
   border-radius: 50%;
-  border: purple 7px solid;
+  border: #fff 5px solid;
   position: absolute;
-  left: calc(var(--value) - 25px);
-  top: calc(50% - 25px);
-  height: 50px;
-  width: 50px;
+  left: calc(var(--value) - 20px);
+  top: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  pointer-events: none;
+}
+.pic-compare-rect-top {
+  background-color: #fff;
+  content: '';
+  display: block;
+  position: absolute;
+  left: calc(var(--value) - 2.5px);
+  top: 0;
+  height: calc(50% - 20px);
+  width: 5px;
+  pointer-events: none;
 }
 
-.c-compare__range:focus::-webkit-slider-thumb {
-  background-color: var(--thumb-bgc-focus);
-  box-shadow: 0 0 0 3px var(--thumb-bgc);
+.pic-compare-rect-bot {
+  background-color: #fff;
+  content: '';
+  display: block;
+  position: absolute;
+  left: calc(var(--value) - 2.5px);
+  top: calc(50% + 20px);
+  height: calc(50% - 20px);
+  width: 5px;
+  pointer-events: none;
 }
-.c-compare__range:focus::-moz-range-thumb {
-  background-color: var(--thumb-bgc-focus);
-  box-shadow: 0 0 0 3px var(--thumb-bgc);
+
+.pic-compare__range:focus::-webkit-slider-thumb {
+  /* background-color: var(--thumb-bgc-focus);
+  box-shadow: 0 0 0 3px var(--thumb-bgc); */
 }
-.c-compare__range::-moz-range-track {
+.pic-compare__range:focus::-moz-range-thumb {
+  /* background-color: var(--thumb-bgc-focus);
+  box-shadow: 0 0 0 3px var(--thumb-bgc); */
+}
+.pic-compare__range::-moz-range-track {
   background: transparent;
   background-size: 100%;
   box-sizing: border-box;
 }
-.c-compare__range::-webkit-slider-runnable-track {
+.pic-compare__range::-webkit-slider-runnable-track {
   background: transparent;
   background-size: 100%;
   box-sizing: border-box;
   height: 100%;
 }
-.c-compare__range,
-.c-compare__range::-webkit-slider-runnable-track,
-.c-compare__range::-webkit-slider-thumb {
+.pic-compare__range,
+.pic-compare__range::-webkit-slider-runnable-track,
+.pic-compare__range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
 }
