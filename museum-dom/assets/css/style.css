@@ -604,11 +604,11 @@ div.welcome-container.container {
     }
     .welcome {
       width: 100%;
-      background-color: #000;
+      /* background-color: #000;
       background-image: url('../img/mona-lisa-welcome.jpg');
       background-size: 700px 525px;
       background-repeat: no-repeat;
-      background-position: calc(50% + 142px) 0%;
+      background-position: calc(50% + 142px) 0%; */
     }
   }
   @media (max-width: 769px) {
@@ -655,10 +655,10 @@ div.welcome-container.container {
       padding-bottom: 30px;
     }
     .welcome {
-      background-image: url('../img/mona-lisa-welcome-768px.jpg');
+      /* background-image: url('../img/mona-lisa-welcome-768px.jpg');
       background-size: 728px 546px;
 
-      background-position: center 68%;
+      background-position: center 68%; */
     }
   }
 
@@ -676,9 +676,9 @@ div.welcome-container.container {
       line-height: 19px;
     }
     .welcome {
-      background-image: url('../img/mona-lisa-welcome-768px.jpg');
+      /* background-image: url('../img/mona-lisa-welcome-768px.jpg');
       background-size: 380px 285px;
-      background-position: center 68%;
+      background-position: center 68%; */
     }
 
     .welcome-container {

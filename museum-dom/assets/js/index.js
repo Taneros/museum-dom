@@ -1,13 +1,8 @@
 console.log('index.js is linked successfully')
 
-// import './my-slider'
-
 const progress = document.querySelectorAll('.progress')
-
 const burgerMenu = document.getElementById('burgerMenu')
-
 const sidenav = document.getElementById('headerSidenav')
-
 const swiperEl = document.querySelector('.swiper')
 
 progress.forEach((el) =>
@@ -90,6 +85,7 @@ button.forEach((el) =>
     }, 350)
   })
 )
+
 // overlay buy tickets
 
 function openNav() {
@@ -128,28 +124,6 @@ if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window &&
   })
   observer.observe(document.getElementById('anchor'))
 }
-
-/*** Slider Swiper */
-
-// Swiper.use([Navigation, Pagination])
-
-// const swiper = new Swiper(swiperEl, {
-//   slideToClickedSlide: true,
-//   simulateTouch: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   allowTouchMove: true,
-//   slidesPerView: 'auto',
-// })
-
-console.log('index.js compliled')
 
 // self-check
 // console.log(`
