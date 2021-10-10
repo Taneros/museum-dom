@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link rel="stylesheet" href="assets/css/nullstyle.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/player.css" />
+  </head>
+  <body>
+    <div class="container video-container">
+      <div class="video__player">
+        <div class="player-window">
+          <button class="player-window-btn button"></button>
+        </div>
+        <div class="player-control">
+          <div class="player-control-wrapper">
+            <button class="player-control-play button"></button>
+            <div class="player-control-progress_bar-vid">
+              <input type="range" value="40" min="0" max="100" step="1" class="progress" />
+            </div>
+            <button class="player-control-volume button"></button>
+            <div class="player-control-progress_bar-vol">
+              <input type="range" value="40" min="0" max="100" step="1" class="progress" />
+            </div>
+            <button class="player-control-full_scr button"></button>
+          </div>
+        </div>
+        <div class="player-playlist">
+          <div class="player-playlist__slides">
+            <iframe
+              src="https://www.youtube.com/embed/aWmJ5DgyWPI?controls=0"
+              title="video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0"
+              title="video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0"
+              title="video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0"
+              title="video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/2OR0OCr6uRE?controls=0"
+              title="video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div class="player-playlist__controls">
+            <div class="player-playlist__controls-wrapper">
+              <button class="player-playlist__left-arrow transition"><img src="assets/svg/playlist-left-arrow.svg" alt="" /></button>
+              <span class="player-playlist__circles">
+                <span class="player-playlist__circle active-circle transition"></span>
+                <span class="player-playlist__circle transition"></span>
+                <span class="player-playlist__circle transition"></span>
+                <span class="player-playlist__circle transition"></span>
+                <span class="player-playlist__circle transition"></span>
+              </span>
+              <button class="player-playlist__right-arrow transition"><img src="assets/svg/playlist-right-arrow.svg" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
