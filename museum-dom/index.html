@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/nullstyle.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/welcome-slider.css" />
+    <link rel="stylesheet" href="assets/css/player.css" />
     <link rel="mona-lisa icon" type="image/jpg" href="assets/img/favicon.ico" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet" />
     <script src="assets/js/index.js" defer></script>
@@ -20,6 +21,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js" defer></script>
     <script type="module" src="assets/js/map.js" defer></script>
     <script src="assets/js/gallery-pic-bubble.js" defer></script>
+    <script type="module" src="assets/js/player.js" defer></script>
   </head>
 
   <body>
@@ -221,21 +223,30 @@
               <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
             </div>
           </div>
-          <div class="video__player">
-            <div class="player-window">
+          <div id="videoPlayer" class="video__player">
+            <div class="player-window-wrapper">
+              <video id="video-player" class="player-window" src="assets/video/video0.mp4" poster="assets/video/poster0.jpg"></video>
               <button class="player-window-btn button"></button>
             </div>
-            <div class="player-control">
+            <div id="videoControls" class="player-control">
               <div class="player-control-wrapper">
-                <button class="player-control-play button"></button>
-                <div class="player-control-progress_bar-vid">
-                  <input type="range" value="40" min="0" max="100" step="1" class="progress" />
+                <button id="play" class="player-control-play button"></button>
+                <div class="player-control-progress_bar-vid" style="--valuePlayerVid: 0%" data="">
+                  <input
+                    type="range"
+                    value=""
+                    min="0"
+                    max="100"
+                    step="1"
+                    class="progress"
+                    style="background: linear-gradient(to right, #710707 0%, #710707 var(--valuePlayerVid), #fff var(--valuePlayerVid), #fff 100%)"
+                  />
                 </div>
-                <button class="player-control-volume button"></button>
+                <button id="mute" class="player-control-volume button"></button>
                 <div class="player-control-progress_bar-vol">
-                  <input type="range" value="40" min="0" max="100" step="1" class="progress" />
+                  <input id="vol" type="range" value="40" min="0" max="100" step="1" class="progress" />
                 </div>
-                <button class="player-control-full_scr button"></button>
+                <button id="fullSrc" class="player-control-full_scr button"></button>
               </div>
             </div>
             <div class="player-playlist">

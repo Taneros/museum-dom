@@ -54,13 +54,13 @@ card.forEach((el, i) => {
 
 // shuffle(picArr)
 
-picArr.map((picArr, index) => {
-  const img = document.createElement('img')
-  img.classList.add('gallery__img')
-  img.src = picArr
-  img.alt = ``
-  galleryInnerContainer.append(img)
-})
+// picArr.map((picArr, index) => {
+//   const img = document.createElement('img')
+//   img.classList.add('gallery__img')
+//   img.src = picArr
+//   img.alt = ``
+//   galleryInnerContainer.append(img)
+// })
 
 //** ripple effect **//
 const button = document.querySelectorAll('[id=ripple]')
