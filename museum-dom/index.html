@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/welcome-slider.css" />
     <link rel="mona-lisa icon" type="image/jpg" href="assets/img/favicon.ico" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet" />
     <script src="assets/js/index.js" defer></script>
     <script type="module" src="assets/js/my-slider.js" defer></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js" defer></script>
+    <script type="module" src="assets/js/map.js" defer></script>
   </head>
 
   <body>
@@ -511,7 +514,7 @@
               <a href="tel:+1800229933"> <p>phone: +33(0) 1 40 20 50 50</p></a>
               <a href="mailto:email@example.com"><p>mail: info@louvre.fr</p></a>
             </div>
-            <div class="contacts__map"></div>
+            <div id="map" class="contacts__map"></div>
           </div>
         </div>
       </section>

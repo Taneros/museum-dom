@@ -3129,12 +3129,11 @@ button.booking-form-right {
 }
 
 .contacts__map {
-  /* width: 960px; */
   width: 960px;
   height: 620px;
-  background-color: #fff;
-  background-image: url('../svg/contacts-map.png');
-  background-size: cover;
+  /* background-color: #fff; */
+  /* background-image: url('../svg/contacts-map.png'); */
+  /* background-size: cover; */
 }
 
 /* ******  @media contacts ********* */
