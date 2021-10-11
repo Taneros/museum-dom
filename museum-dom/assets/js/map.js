@@ -1,3 +1,5 @@
+console.log('✔ map.js is linked')
+
 mapboxgl.accessToken = 'pk.eyJ1IjoidGFuZXJvcyIsImEiOiJja3VtaDJ1eTQwZWlpMnZwMXR0MHRrbG4zIn0.jASSPXML7wpNDvysJiWYNw'
 const map = new mapboxgl.Map({
   container: 'map',

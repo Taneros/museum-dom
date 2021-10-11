@@ -1719,6 +1719,38 @@ div.welcome-container.container {
   margin-top: 50px;
 }
 
+/* bubble top effect */
+
+.gallery__img {
+  transform: translateY(+30%) scale(0.95);
+}
+
+.gallery__img.slide-in {
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.gallery__img.active {
+  opacity: 1;
+  transform: translateY(0%) scale(1);
+  /* animation-name: img-slide-in;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1; */
+}
+
+/* @keyframes img-slide-in {
+  50% {
+    opacity: 0.5;
+    transform: translateY(15%) scale(1);
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+} */
+
+/*  */
+
 .gallery__inner-container::before {
   position: absolute;
   content: '';

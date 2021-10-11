@@ -1,4 +1,4 @@
-console.log('my-slider.js is linked successfully')
+console.log('✔ my-slider.js is linked')
 
 import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
 
@@ -44,9 +44,9 @@ slider_box_parent.addEventListener('click', (e) => {
 swiper.onAny(updateBox)
 
 function updateBox() {
-  console.log('swiper.activeIndex', swiper.activeIndex)
+  // console.log('swiper.activeIndex', swiper.activeIndex)
   const currentIndex = swiper.activeIndex % 5
-  console.log('currentIndex', currentIndex)
+  // console.log('currentIndex', currentIndex)
   slider_box.forEach((el, idx) => {
     el.classList.toggle('active-box', idx === currentIndex)
   })
