@@ -21,6 +21,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js" defer></script>
     <script type="module" src="assets/js/map.js" defer></script>
     <script src="assets/js/gallery-pic-bubble.js" defer></script>
+    <script type="module" src="assets/js/player.js" defer></script>
   </head>
 
   <body>
@@ -222,24 +223,25 @@
               <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
             </div>
           </div>
-          <div class="video__player">
-            <div class="player-window">
+          <div id="videoPlayer" class="video__player">
+            <div class="player-window-wrapper">
+              <video id="video-player" class="player-window" src="assets/video/video0.mp4"></video>
               <button class="player-window-btn button"></button>
             </div>
-            <div class="player-control">
+            <div id="videoControls" class="player-control">
               <div class="player-control-wrapper">
-                <button class="player-control-play button"></button>
-                <div class="player-control-progress_bar-vid">
-                  <input type="range" value="40" min="0" max="100" step="1" class="progress" />
+                <button id="play" class="player-control-play button"></button>
+                <div class="player-control-progress_bar-vid" style="--valuePlayer: 0%">
+                  <input type="range" value="" min="0" max="100" step="1" class="progress" />
                 </div>
-                <button class="player-control-volume button"></button>
+                <button id="mute" class="player-control-volume button"></button>
                 <div class="player-control-progress_bar-vol">
-                  <input type="range" value="40" min="0" max="100" step="1" class="progress" />
+                  <input id="vol" type="range" value="40" min="0" max="100" step="1" class="progress" />
                 </div>
-                <button class="player-control-full_scr button"></button>
+                <button id="fullSrc" class="player-control-full_scr button"></button>
               </div>
             </div>
-            <div class="player-playlist">
+            <!-- <div class="player-playlist">
               <div class="player-playlist__slides">
                 <iframe
                   src="https://www.youtube.com/embed/aWmJ5DgyWPI?controls=0"
@@ -285,7 +287,7 @@
                   <button class="player-playlist__right-arrow transition"><img src="assets/svg/playlist-right-arrow.svg" alt="" /></button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
