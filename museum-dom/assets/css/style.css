@@ -1753,6 +1753,7 @@ div.welcome-container.container {
 
 .gallery__inner-container::before {
   position: absolute;
+  z-index: 5;
   content: '';
   display: block;
   width: 100%;

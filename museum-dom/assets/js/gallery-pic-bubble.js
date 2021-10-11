@@ -22,10 +22,10 @@ function bouncer(func, wait = 20, immediate = true) {
 function bubble(e) {
   galleryImg.forEach((img) => {
     // half way through the image
-    const slideInAt = window.scrollY + window.innerHeight - img.height / 4
+    const slideImgAt = window.scrollY + window.innerHeight - img.height / 4
     // console.log(`window.scrollY ${window.scrollY}`)
     // console.log(`window.innerHeight ${window.innerHeight}`)
-    console.log(`slideInAt ${slideInAt}`)
+    console.log(`slideInAt ${slideImgAt}`)
     // bottom of the image
     console.log(`gallerySection.offsetTop ${gallerySection.offsetTop}`)
 
@@ -33,10 +33,10 @@ function bubble(e) {
     // console.log(`img.offsetTop ${img.offsetTop}`)
 
     console.log(`imageBottom ${imageBottom}`)
-    const isHalfShown = slideInAt > img.offsetTop + gallerySection.offsetTop
-    console.log(`halfShown ${isHalfShown}`)
+    const isHalfShow = slideImgAt > img.offsetTop + gallerySection.offsetTop
+    console.log(`halfShown ${isHalfShow}`)
     const isNotScrolledPast = window.scrollY < imageBottom
-    if (isHalfShown && isNotScrolledPast) {
+    if (isHalfShow && isNotScrolledPast) {
       img.classList.add('active')
     } else {
       img.classList.remove('active')
