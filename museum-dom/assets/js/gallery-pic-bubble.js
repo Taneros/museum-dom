@@ -25,16 +25,16 @@ function bubble(e) {
     const slideInAt = window.scrollY + window.innerHeight - img.height / 4
     // console.log(`window.scrollY ${window.scrollY}`)
     // console.log(`window.innerHeight ${window.innerHeight}`)
-    console.log(`slideInAt ${slideInAt}`)
+    // console.log(`slideInAt ${slideInAt}`)
     // bottom of the image
-    console.log(`gallerySection.offsetTop ${gallerySection.offsetTop}`)
+    // console.log(`gallerySection.offsetTop ${gallerySection.offsetTop}`)
 
     const imageBottom = img.offsetTop + img.height + gallerySection.offsetTop
     // console.log(`img.offsetTop ${img.offsetTop}`)
 
-    console.log(`imageBottom ${imageBottom}`)
+    // console.log(`imageBottom ${imageBottom}`)
     const isHalfShown = slideInAt > img.offsetTop + gallerySection.offsetTop
-    console.log(`halfShown ${isHalfShown}`)
+    // console.log(`halfShown ${isHalfShown}`)
     const isNotScrolledPast = window.scrollY < imageBottom
     if (isHalfShown && isNotScrolledPast) {
       img.classList.add('active')
